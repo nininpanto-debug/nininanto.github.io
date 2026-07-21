@@ -105,7 +105,18 @@ body{
                                                                                                                                                 box-shadow:0 0 25px rgba(202,168,90,.4);
                                                                                                                                                 }
 
+#intro{
+        min-height:100vh;
+            display:flex;
+                flex-direction:column;
+                    justify-content:center;
+                        align-items:center;
+                            transition:opacity 1s ease, transform 1s ease;
+                            }
 
+                            #main{
+                                min-height:100vh;
+                                }
 
                                                                                                                                                 .hidden {
                                                                                                                                                         display: none;
