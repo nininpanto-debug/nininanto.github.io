@@ -104,4 +104,27 @@ body{
                                                                                                                                             border:1px solid #caa85a;
                                                                                                                                                 box-shadow:0 0 25px rgba(202,168,90,.4);
                                                                                                                                                 }
-}
+
+
+
+                                                                                                                                                .hidden {
+                                                                                                                                                        display: none;
+                                                                                                                                                        }
+
+                                                                                                                                                        .show {
+                                                                                                                                                            display: block;
+                                                                                                                                                                animation: fadeIn 1.2s ease;
+                                                                                                                                                                }
+
+                                                                                                                                                                @keyframes fadeIn {
+                                                                                                                                                                    from {
+                                                                                                                                                                            opacity: 0;
+                                                                                                                                                                                    transform: translateY(30px);
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                            to {
+                                                                                                                                                                                                    opacity: 1;
+                                                                                                                                                                                                            transform: translateY(0);
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                }
+                                                                                                                                                }
