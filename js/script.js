@@ -17,11 +17,11 @@
 
                                                  event.preventDefault();
 
-                                                             const home = document.querySelector("#home");
+                                                             const worlds = document.querySelector("#worlds");
 
                                                                          if (home) {
 
-                                                                                         home.scrollIntoView({
+                                                                                         worlds.scrollIntoView({})
                                                                                                              behavior: "smooth"
                                                                                                                              });
 
