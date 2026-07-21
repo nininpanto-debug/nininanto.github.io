@@ -1,0 +1,284 @@
+/* ==========================================
+   STYLE.CSS
+      The World of Ninin Anto
+      ========================================== */
+
+      /* ========= Root ========= */
+
+      :root{
+
+          --black:#000000;
+              --dark:#0d0d0d;
+                  --card:#181818;
+
+                      --gold:#D4AF37;
+                          --gold-light:#F5D76E;
+
+                              --white:#ffffff;
+                                  --gray:#bdbdbd;
+
+                                  }
+
+                                  /* ========= Body ========= */
+
+                                  body{
+
+                                      background:var(--black);
+                                          color:var(--white);
+
+                                          }
+
+                                          /* ========= Intro ========= */
+
+                                          #intro{
+
+                                              min-height:100vh;
+
+                                                  display:flex;
+                                                      flex-direction:column;
+                                                          justify-content:center;
+                                                              align-items:center;
+
+                                                                  text-align:center;
+
+                                                                      padding:40px 20px;
+
+                                                                      }
+
+                                                                      .main-logo{
+
+                                                                          width:170px;
+                                                                              margin-bottom:30px;
+
+                                                                              }
+
+                                                                              #intro h1{
+
+                                                                                  font-size:3.5rem;
+                                                                                      color:var(--gold);
+
+                                                                                          margin-bottom:20px;
+
+                                                                                          }
+
+                                                                                          .tagline{
+
+                                                                                              font-size:1.2rem;
+
+                                                                                                  color:var(--gray);
+
+                                                                                                      margin-bottom:40px;
+
+                                                                                                          max-width:700px;
+
+                                                                                                          }
+
+                                                                                                          /* ========= Button ========= */
+
+                                                                                                          .gold-btn{
+
+                                                                                                              display:inline-block;
+
+                                                                                                                  background:var(--gold);
+
+                                                                                                                      color:#000;
+
+                                                                                                                          padding:15px 40px;
+
+                                                                                                                              border-radius:50px;
+
+                                                                                                                                  font-weight:bold;
+
+                                                                                                                                      transition:.3s;
+
+                                                                                                                                      }
+
+                                                                                                                                      .gold-btn:hover{
+
+                                                                                                                                          background:var(--gold-light);
+
+                                                                                                                                              transform:translateY(-3px);
+
+                                                                                                                                              }
+
+                                                                                                                                              /* ========= Hero ========= */
+
+                                                                                                                                              .hero{
+
+                                                                                                                                                  padding:100px 10%;
+
+                                                                                                                                                      text-align:center;
+
+                                                                                                                                                      }
+
+                                                                                                                                                      .hero-content{
+
+                                                                                                                                                          max-width:900px;
+
+                                                                                                                                                              margin:auto;
+
+                                                                                                                                                              }
+
+                                                                                                                                                              .hero h2{
+
+                                                                                                                                                                  color:var(--gold);
+
+                                                                                                                                                                      margin-bottom:15px;
+
+                                                                                                                                                                          font-size:1.3rem;
+
+                                                                                                                                                                          }
+
+                                                                                                                                                                          .hero h1{
+
+                                                                                                                                                                              font-size:3rem;
+
+                                                                                                                                                                                  margin-bottom:30px;
+
+                                                                                                                                                                                  }
+
+                                                                                                                                                                                  .hero p{
+
+                                                                                                                                                                                      color:var(--gray);
+
+                                                                                                                                                                                          font-size:1.15rem;
+
+                                                                                                                                                                                              line-height:1.9;
+
+                                                                                                                                                                                                  margin-bottom:20px;
+
+                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                  /* ========= About ========= */
+
+                                                                                                                                                                                                  .about{
+
+                                                                                                                                                                                                      padding:80px 10%;
+
+                                                                                                                                                                                                          text-align:center;
+
+                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                          .about h2{
+
+                                                                                                                                                                                                              color:var(--gold);
+
+                                                                                                                                                                                                                  font-size:2.3rem;
+
+                                                                                                                                                                                                                      margin-bottom:30px;
+
+                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                      .about p{
+
+                                                                                                                                                                                                                          max-width:900px;
+
+                                                                                                                                                                                                                              margin:20px auto;
+
+                                                                                                                                                                                                                                  color:var(--gray);
+
+                                                                                                                                                                                                                                      line-height:1.9;
+
+                                                                                                                                                                                                                                          font-size:1.1rem;
+
+                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                          /* ========= Worlds ========= */
+
+                                                                                                                                                                                                                                          .worlds{
+
+                                                                                                                                                                                                                                              padding:90px 8%;
+
+                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                              .worlds h2{
+
+                                                                                                                                                                                                                                                  text-align:center;
+
+                                                                                                                                                                                                                                                      color:var(--gold);
+
+                                                                                                                                                                                                                                                          font-size:2.5rem;
+
+                                                                                                                                                                                                                                                              margin-bottom:60px;
+
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                              /* ========= Grid ========= */
+
+                                                                                                                                                                                                                                                              .world-grid{
+
+                                                                                                                                                                                                                                                                  display:grid;
+
+                                                                                                                                                                                                                                                                      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+                                                                                                                                                                                                                                                                          gap:30px;
+
+                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                          /* ========= Cards ========= */
+
+                                                                                                                                                                                                                                                                          .card{
+
+                                                                                                                                                                                                                                                                              background:var(--card);
+
+                                                                                                                                                                                                                                                                                  border:1px solid rgba(212,175,55,.25);
+
+                                                                                                                                                                                                                                                                                      border-radius:20px;
+
+                                                                                                                                                                                                                                                                                          padding:35px;
+
+                                                                                                                                                                                                                                                                                              text-align:center;
+
+                                                                                                                                                                                                                                                                                                  transition:.35s;
+
+                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                  .card:hover{
+
+                                                                                                                                                                                                                                                                                                      transform:translateY(-10px);
+
+                                                                                                                                                                                                                                                                                                          border-color:var(--gold);
+
+                                                                                                                                                                                                                                                                                                              box-shadow:0 15px 40px rgba(212,175,55,.18);
+
+                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                              .card h3{
+
+                                                                                                                                                                                                                                                                                                                  color:var(--gold);
+
+                                                                                                                                                                                                                                                                                                                      font-size:1.5rem;
+
+                                                                                                                                                                                                                                                                                                                          margin-bottom:18px;
+
+                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                          .card p{
+
+                                                                                                                                                                                                                                                                                                                              color:var(--gray);
+
+                                                                                                                                                                                                                                                                                                                                  line-height:1.8;
+
+                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                  /* ========= Footer ========= */
+
+                                                                                                                                                                                                                                                                                                                                  footer{
+
+                                                                                                                                                                                                                                                                                                                                      padding:40px 20px;
+
+                                                                                                                                                                                                                                                                                                                                          text-align:center;
+
+                                                                                                                                                                                                                                                                                                                                              border-top:1px solid rgba(255,255,255,.08);
+
+                                                                                                                                                                                                                                                                                                                                                  margin-top:80px;
+
+                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                  footer p{
+
+                                                                                                                                                                                                                                                                                                                                                      color:#8e8e8e;
+
+                                                                                                                                                                                                                                                                                                                                                          font-size:.95rem;
+
+                                                                                                                                                                                                                                                                                                                                                          }
