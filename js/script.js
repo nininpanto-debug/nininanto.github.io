@@ -9,7 +9,7 @@
                  Enter the World
                      ========================== */
 
-                         const enterButton = document.querySelector(".gold-btn");
+                         const enterButton = document.querySelector("#enterWorldBtn");
 
                              if (enterButton) {
 
