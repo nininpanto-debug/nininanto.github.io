@@ -1,4 +1,119 @@
+/* ==========================================
+   THE WORLD OF NININ ANTO
+      STYLE.CSS
+      ========================================== */
 
+      :root{
+          --gold:#D4AF37;
+              --gold-light:#E8C766;
+                  --black:#050505;
+                      --dark:#111111;
+                          --card:#1B1B1B;
+                              --white:#FFFFFF;
+                                  --gray:#BBBBBB;
+                                  }
+
+                                  /* BODY */
+
+                                  body{
+                                      background:var(--black);
+                                          color:var(--white);
+                                              font-family:'Poppins',sans-serif;
+                                                  line-height:1.7;
+                                                  }
+
+                                                  /* LINKS */
+
+                                                  a{
+                                                      text-decoration:none;
+                                                          color:inherit;
+                                                          }
+
+                                                          /* LOGO */
+
+                                                          .logo,
+                                                          .main-logo{
+                                                              width:180px;
+                                                                  display:block;
+                                                                      margin:20px auto;
+                                                                      }
+
+                                                                      /* INTRO */
+
+                                                                      #intro{
+                                                                          min-height:100vh;
+                                                                              display:flex;
+                                                                                  flex-direction:column;
+                                                                                      justify-content:center;
+                                                                                          align-items:center;
+                                                                                              text-align:center;
+                                                                                                  padding:40px;
+                                                                                                  }
+
+                                                                                                  #intro h1{
+                                                                                                      font-size:2rem;
+                                                                                                      }
+
+                                                                                                      #intro h2{
+                                                                                                          font-size:3.5rem;
+                                                                                                              color:var(--gold);
+                                                                                                                  margin:20px 0;
+                                                                                                                  }
+
+                                                                                                                  #intro p{
+                                                                                                                      color:var(--gray);
+                                                                                                                          margin-bottom:40px;
+                                                                                                                          }
+
+                                                                                                                          /* BUTTON */
+
+                                                                                                                          .gold-btn,
+                                                                                                                          button{
+
+                                                                                                                              display:inline-block;
+
+                                                                                                                                  padding:15px 35px;
+
+                                                                                                                                      background:var(--gold);
+
+                                                                                                                                          color:#000;
+
+                                                                                                                                              border-radius:50px;
+
+                                                                                                                                                  font-weight:bold;
+
+                                                                                                                                                      transition:.3s;
+
+                                                                                                                                                      }
+
+                                                                                                                                                      .gold-btn:hover,
+                                                                                                                                                      button:hover{
+
+                                                                                                                                                          background:var(--gold-light);
+
+                                                                                                                                                          }
+
+                                                                                                                                                          /* HERO */
+
+                                                                                                                                                          .hero,
+                                                                                                                                                          .page-hero{
+
+                                                                                                                                                              max-width:1200px;
+
+                                                                                                                                                                  margin:auto;
+
+                                                                                                                                                                      padding:80px 20px;
+
+                                                                                                                                                                          text-align:center;
+
+                                                                                                                                                                          }
+
+                                                                                                                                                                          .hero h2,
+                                                                                                                                                                          .page-hero h1{
+
+                                                                                                                                                                              color:var(--gold);
+
+                                                                                                                                                                                  font-size:
 
 
 
