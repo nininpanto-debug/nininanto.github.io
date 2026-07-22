@@ -376,4 +376,4 @@ Every visitor should feel like they are watching a beautifully directed document
 
 ---
 
-END OF DOCUMENTdesign
+END OF DOCUMENT
