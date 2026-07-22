@@ -1,0 +1,359 @@
+/* ==========================================================
+   THE WORLD OF NININ ANTO
+      Version 2.0
+         hero.css
+         ========================================================== */
+
+         /* ===========================
+            HERO SECTION
+            =========================== */
+
+            .hero{
+
+                position:relative;
+
+                    width:100%;
+
+                        min-height:100vh;
+
+                            display:flex;
+
+                                align-items:center;
+
+                                    justify-content:center;
+
+                                        overflow:hidden;
+
+                                            background:var(--background);
+
+                                            }
+
+                                            /* ===========================
+                                               BACKGROUND
+                                               =========================== */
+
+                                               .hero-bg{
+
+                                                   position:absolute;
+
+                                                       inset:0;
+
+                                                           width:100%;
+
+                                                               height:100%;
+
+                                                                   overflow:hidden;
+
+                                                                       z-index:1;
+
+                                                                       }
+
+                                                                       .hero-bg img,
+
+                                                                       .hero-bg video{
+
+                                                                           width:100%;
+
+                                                                               height:100%;
+
+                                                                                   object-fit:cover;
+
+                                                                                   }
+
+                                                                                   /* ===========================
+                                                                                      OVERLAY
+                                                                                      =========================== */
+
+                                                                                      .hero-overlay{
+
+                                                                                          position:absolute;
+
+                                                                                              inset:0;
+
+                                                                                                  background:
+
+                                                                                                          linear-gradient(
+                                                                                                                      to bottom,
+                                                                                                                                  rgba(0,0,0,.35),
+                                                                                                                                              rgba(0,0,0,.65)
+                                                                                                                                                      ),
+
+                                                                                                                                                              radial-gradient(
+                                                                                                                                                                          circle at center,
+                                                                                                                                                                                      transparent 10%,
+                                                                                                                                                                                                  rgba(0,0,0,.75) 100%
+                                                                                                                                                                                                          );
+
+                                                                                                                                                                                                              z-index:2;
+
+                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                              /* ===========================
+                                                                                                                                                                                                                 CONTENT
+                                                                                                                                                                                                                 =========================== */
+
+                                                                                                                                                                                                                 .hero-content{
+
+                                                                                                                                                                                                                     position:relative;
+
+                                                                                                                                                                                                                         z-index:5;
+
+                                                                                                                                                                                                                             text-align:center;
+
+                                                                                                                                                                                                                                 width:min(90%,900px);
+
+                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                 /* ===========================
+                                                                                                                                                                                                                                    LOGO
+                                                                                                                                                                                                                                    =========================== */
+
+                                                                                                                                                                                                                                    .hero-logo{
+
+                                                                                                                                                                                                                                        width:160px;
+
+                                                                                                                                                                                                                                            margin:0 auto 30px;
+
+                                                                                                                                                                                                                                                filter:drop-shadow(0 10px 35px rgba(212,175,55,.30));
+
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                /* ===========================
+                                                                                                                                                                                                                                                   TITLE
+                                                                                                                                                                                                                                                   =========================== */
+
+                                                                                                                                                                                                                                                   .hero-title{
+
+                                                                                                                                                                                                                                                       color:var(--white);
+
+                                                                                                                                                                                                                                                           text-transform:uppercase;
+
+                                                                                                                                                                                                                                                               letter-spacing:6px;
+
+                                                                                                                                                                                                                                                                   margin-bottom:20px;
+
+                                                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                                                   .hero-title span{
+
+                                                                                                                                                                                                                                                                       color:var(--primary);
+
+                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                       /* ===========================
+                                                                                                                                                                                                                                                                          TAGLINE
+                                                                                                                                                                                                                                                                          =========================== */
+
+                                                                                                                                                                                                                                                                          .hero-tagline{
+
+                                                                                                                                                                                                                                                                              max-width:700px;
+
+                                                                                                                                                                                                                                                                                  margin:0 auto 35px;
+
+                                                                                                                                                                                                                                                                                      color:var(--text);
+
+                                                                                                                                                                                                                                                                                          font-size:1.2rem;
+
+                                                                                                                                                                                                                                                                                              line-height:2;
+
+                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                              /* ===========================
+                                                                                                                                                                                                                                                                                                 BUTTONS
+                                                                                                                                                                                                                                                                                                 =========================== */
+
+                                                                                                                                                                                                                                                                                                 .hero-buttons{
+
+                                                                                                                                                                                                                                                                                                     display:flex;
+
+                                                                                                                                                                                                                                                                                                         justify-content:center;
+
+                                                                                                                                                                                                                                                                                                             align-items:center;
+
+                                                                                                                                                                                                                                                                                                                 gap:20px;
+
+                                                                                                                                                                                                                                                                                                                     flex-wrap:wrap;
+
+                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                     .hero-btn{
+
+                                                                                                                                                                                                                                                                                                                         display:inline-flex;
+
+                                                                                                                                                                                                                                                                                                                             justify-content:center;
+
+                                                                                                                                                                                                                                                                                                                                 align-items:center;
+
+                                                                                                                                                                                                                                                                                                                                     min-width:190px;
+
+                                                                                                                                                                                                                                                                                                                                         padding:15px 34px;
+
+                                                                                                                                                                                                                                                                                                                                             border-radius:50px;
+
+                                                                                                                                                                                                                                                                                                                                                 transition:var(--transition);
+
+                                                                                                                                                                                                                                                                                                                                                     font-weight:600;
+
+                                                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                                                     .hero-btn-primary{
+
+                                                                                                                                                                                                                                                                                                                                                         background:var(--primary);
+
+                                                                                                                                                                                                                                                                                                                                                             color:#000;
+
+                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                             .hero-btn-primary:hover{
+
+                                                                                                                                                                                                                                                                                                                                                                 transform:translateY(-4px);
+
+                                                                                                                                                                                                                                                                                                                                                                     box-shadow:var(--gold-shadow);
+
+                                                                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                                                                     .hero-btn-outline{
+
+                                                                                                                                                                                                                                                                                                                                                                         border:2px solid var(--primary);
+
+                                                                                                                                                                                                                                                                                                                                                                             color:var(--primary);
+
+                                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                                             .hero-btn-outline:hover{
+
+                                                                                                                                                                                                                                                                                                                                                                                 background:var(--primary);
+
+                                                                                                                                                                                                                                                                                                                                                                                     color:#000;
+
+                                                                                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                                                                                     /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                        SCROLL INDICATOR
+                                                                                                                                                                                                                                                                                                                                                                                        =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                        .scroll-indicator{
+
+                                                                                                                                                                                                                                                                                                                                                                                            position:absolute;
+
+                                                                                                                                                                                                                                                                                                                                                                                                left:50%;
+
+                                                                                                                                                                                                                                                                                                                                                                                                    bottom:40px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                        transform:translateX(-50%);
+
+                                                                                                                                                                                                                                                                                                                                                                                                            z-index:10;
+
+                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                            .scroll-indicator span{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                display:block;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                    width:28px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        height:48px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                            border:2px solid var(--white);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                border-radius:30px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    position:relative;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    .scroll-indicator span::before{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                        content:"";
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                            position:absolute;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                left:50%;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    top:10px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        transform:translateX(-50%);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            width:6px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                height:10px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    border-radius:20px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        background:var(--primary);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            animation:scrollDown 2s infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ANIMATION
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @keyframes scrollDown{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           opacity:0;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   transform:translate(-50%,0);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           50%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   opacity:1;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           100%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   opacity:0;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           transform:translate(-50%,18px);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  RESPONSIVE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @media(max-width:768px){
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      .hero-logo{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              width:120px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      .hero-title{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              letter-spacing:3px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      .hero-tagline{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              font-size:1rem;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      line-height:1.8;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              .hero-buttons{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      flex-direction:column;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              .hero-btn{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      width:100%;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              max-width:300px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
