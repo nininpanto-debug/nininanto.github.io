@@ -1,0 +1,139 @@
+/* ==========================================================
+   THE WORLD OF NININ ANTO
+      Version 2.0
+         variables.css
+         ========================================================== */
+
+         :root{
+
+             /* ===========================
+                    COLORS
+                        =========================== */
+
+                            --primary:#D4AF37;
+                                --primary-light:#F6D365;
+                                    --primary-dark:#A67C00;
+
+                                        --background:#050505;
+                                            --surface:#101010;
+                                                --surface-light:#181818;
+
+                                                    --white:#FFFFFF;
+                                                        --text:#E8E8E8;
+                                                            --text-light:#BBBBBB;
+
+                                                                --success:#2ECC71;
+                                                                    --warning:#F39C12;
+                                                                        --danger:#E74C3C;
+
+                                                                            --border:rgba(255,255,255,.08);
+
+                                                                                --glass:rgba(255,255,255,.06);
+
+                                                                                    --overlay:rgba(0,0,0,.55);
+
+                                                                                        /* ===========================
+                                                                                               TYPOGRAPHY
+                                                                                                   =========================== */
+
+                                                                                                       --font-main:
+                                                                                                               "Poppins",
+                                                                                                                       sans-serif;
+
+                                                                                                                           --font-heading:
+                                                                                                                                   "Cinzel",
+                                                                                                                                           serif;
+
+                                                                                                                                               --font-body:
+                                                                                                                                                       "Inter",
+                                                                                                                                                               sans-serif;
+
+                                                                                                                                                                   /* ===========================
+                                                                                                                                                                          FONT SIZE
+                                                                                                                                                                              =========================== */
+
+                                                                                                                                                                                  --fs-xs:.8rem;
+                                                                                                                                                                                      --fs-sm:.9rem;
+                                                                                                                                                                                          --fs-md:1rem;
+                                                                                                                                                                                              --fs-lg:1.2rem;
+                                                                                                                                                                                                  --fs-xl:1.5rem;
+                                                                                                                                                                                                      --fs-2xl:2rem;
+                                                                                                                                                                                                          --fs-3xl:3rem;
+                                                                                                                                                                                                              --fs-4xl:4rem;
+                                                                                                                                                                                                                  --fs-5xl:5rem;
+
+                                                                                                                                                                                                                      /* ===========================
+                                                                                                                                                                                                                             FONT WEIGHT
+                                                                                                                                                                                                                                 =========================== */
+
+                                                                                                                                                                                                                                     --fw-light:300;
+                                                                                                                                                                                                                                         --fw-normal:400;
+                                                                                                                                                                                                                                             --fw-medium:500;
+                                                                                                                                                                                                                                                 --fw-semibold:600;
+                                                                                                                                                                                                                                                     --fw-bold:700;
+
+                                                                                                                                                                                                                                                         /* ===========================
+                                                                                                                                                                                                                                                                SPACING
+                                                                                                                                                                                                                                                                    =========================== */
+
+                                                                                                                                                                                                                                                                        --space-xs:8px;
+                                                                                                                                                                                                                                                                            --space-sm:12px;
+                                                                                                                                                                                                                                                                                --space-md:20px;
+                                                                                                                                                                                                                                                                                    --space-lg:40px;
+                                                                                                                                                                                                                                                                                        --space-xl:60px;
+                                                                                                                                                                                                                                                                                            --space-2xl:100px;
+
+                                                                                                                                                                                                                                                                                                /* ===========================
+                                                                                                                                                                                                                                                                                                       WIDTH
+                                                                                                                                                                                                                                                                                                           =========================== */
+
+                                                                                                                                                                                                                                                                                                               --container:1300px;
+
+                                                                                                                                                                                                                                                                                                                   /* ===========================
+                                                                                                                                                                                                                                                                                                                          BORDER RADIUS
+                                                                                                                                                                                                                                                                                                                              =========================== */
+
+                                                                                                                                                                                                                                                                                                                                  --radius-sm:8px;
+                                                                                                                                                                                                                                                                                                                                      --radius-md:14px;
+                                                                                                                                                                                                                                                                                                                                          --radius-lg:20px;
+                                                                                                                                                                                                                                                                                                                                              --radius-xl:30px;
+                                                                                                                                                                                                                                                                                                                                                  --radius-round:50%;
+
+                                                                                                                                                                                                                                                                                                                                                      /* ===========================
+                                                                                                                                                                                                                                                                                                                                                             SHADOW
+                                                                                                                                                                                                                                                                                                                                                                 =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                     --shadow-small:
+                                                                                                                                                                                                                                                                                                                                                                             0 5px 15px rgba(0,0,0,.20);
+
+                                                                                                                                                                                                                                                                                                                                                                                 --shadow-medium:
+                                                                                                                                                                                                                                                                                                                                                                                         0 10px 30px rgba(0,0,0,.35);
+
+                                                                                                                                                                                                                                                                                                                                                                                             --shadow-large:
+                                                                                                                                                                                                                                                                                                                                                                                                     0 20px 60px rgba(0,0,0,.55);
+
+                                                                                                                                                                                                                                                                                                                                                                                                         --gold-shadow:
+                                                                                                                                                                                                                                                                                                                                                                                                                 0 0 30px rgba(212,175,55,.25);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                     /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                            TRANSITIONS
+                                                                                                                                                                                                                                                                                                                                                                                                                                =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    --transition-fast:.25s ease;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                        --transition:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                .4s ease;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    --transition-slow:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            .8s ease;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Z INDEX
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               --z-loader:9999;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   --z-nav:999;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       --z-overlay:100;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           --z-content:10;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
