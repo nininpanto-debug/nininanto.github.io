@@ -1,0 +1,201 @@
+/* ==========================================================
+   THE WORLD OF NININ ANTO
+      Version 2.0
+         reset.css
+         ========================================================== */
+
+         /* Box Model */
+
+         *,
+         *::before,
+         *::after{
+
+             margin:0;
+                 padding:0;
+                     box-sizing:border-box;
+
+                     }
+
+                     /* HTML */
+
+                     html{
+
+                         scroll-behavior:smooth;
+                             -webkit-text-size-adjust:100%;
+
+                             }
+
+                             /* Body */
+
+                             body{
+
+                                 min-height:100vh;
+
+                                     background:var(--background);
+
+                                         color:var(--text);
+
+                                             font-family:var(--font-body);
+
+                                                 line-height:1.7;
+
+                                                     overflow-x:hidden;
+
+                                                         text-rendering:optimizeLegibility;
+
+                                                             -webkit-font-smoothing:antialiased;
+
+                                                                 -moz-osx-font-smoothing:grayscale;
+
+                                                                 }
+
+                                                                 /* Images */
+
+                                                                 img,
+                                                                 picture{
+
+                                                                     display:block;
+
+                                                                         max-width:100%;
+
+                                                                             height:auto;
+
+                                                                             }
+
+                                                                             /* Video */
+
+                                                                             video{
+
+                                                                                 display:block;
+
+                                                                                     max-width:100%;
+
+                                                                                     }
+
+                                                                                     /* Form Elements */
+
+                                                                                     input,
+                                                                                     button,
+                                                                                     textarea,
+                                                                                     select{
+
+                                                                                         font:inherit;
+
+                                                                                             border:none;
+
+                                                                                                 outline:none;
+
+                                                                                                     background:none;
+
+                                                                                                     }
+
+                                                                                                     /* Buttons */
+
+                                                                                                     button{
+
+                                                                                                         cursor:pointer;
+
+                                                                                                         }
+
+                                                                                                         /* Links */
+
+                                                                                                         a{
+
+                                                                                                             text-decoration:none;
+
+                                                                                                                 color:inherit;
+
+                                                                                                                 }
+
+                                                                                                                 /* Lists */
+
+                                                                                                                 ul,
+                                                                                                                 ol{
+
+                                                                                                                     list-style:none;
+
+                                                                                                                     }
+
+                                                                                                                     /* Tables */
+
+                                                                                                                     table{
+
+                                                                                                                         border-collapse:collapse;
+
+                                                                                                                             border-spacing:0;
+
+                                                                                                                             }
+
+                                                                                                                             /* Text Selection */
+
+                                                                                                                             ::selection{
+
+                                                                                                                                 background:var(--primary);
+
+                                                                                                                                     color:#000;
+
+                                                                                                                                     }
+
+                                                                                                                                     /* Scrollbar */
+
+                                                                                                                                     ::-webkit-scrollbar{
+
+                                                                                                                                         width:10px;
+
+                                                                                                                                         }
+
+                                                                                                                                         ::-webkit-scrollbar-track{
+
+                                                                                                                                             background:#0a0a0a;
+
+                                                                                                                                             }
+
+                                                                                                                                             ::-webkit-scrollbar-thumb{
+
+                                                                                                                                                 background:var(--primary);
+
+                                                                                                                                                     border-radius:20px;
+
+                                                                                                                                                     }
+
+                                                                                                                                                     ::-webkit-scrollbar-thumb:hover{
+
+                                                                                                                                                         background:var(--primary-light);
+
+                                                                                                                                                         }
+
+                                                                                                                                                         /* Focus */
+
+                                                                                                                                                         :focus-visible{
+
+                                                                                                                                                             outline:2px solid var(--primary);
+
+                                                                                                                                                                 outline-offset:3px;
+
+                                                                                                                                                                 }
+
+                                                                                                                                                                 /* Utility */
+
+                                                                                                                                                                 .hidden{
+
+                                                                                                                                                                     display:none !important;
+
+                                                                                                                                                                     }
+
+                                                                                                                                                                     .text-center{
+
+                                                                                                                                                                         text-align:center;
+
+                                                                                                                                                                         }
+
+                                                                                                                                                                         .w-100{
+
+                                                                                                                                                                             width:100%;
+
+                                                                                                                                                                             }
+
+                                                                                                                                                                             .h-100{
+
+                                                                                                                                                                                 height:100%;
+
+                                                                                                                                                                                 }
