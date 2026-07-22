@@ -437,9 +437,220 @@
                     background:#f1c94d;
 
             }
+            }/*==============================
+            WORLD CARDS
+            ==============================*/
+
+            .section-subtitle{
+
+                text-align:center;
+
+                    color:#bbbbbb;
+
+                        max-width:700px;
+
+                            margin:0 auto 60px;
+
+                            }
+
+                            .world-card{
+
+                                position:relative;
+
+                                    min-height:420px;
+
+                                        overflow:hidden;
+
+                                            border-radius:20px;
+
+                                                background:#181818;
+
+                                                    display:flex;
+
+                                                        align-items:flex-end;
+
+                                                            transition:.5s;
+
+                                                                background-size:cover;
+
+                                                                    background-position:center;
+
+                                                                    }
+
+                                                                    .world-card:hover{
+
+                                                                        transform:translateY(-10px);
+
+                                                                        }
+
+                                                                        .card-overlay{
+
+                                                                            position:absolute;
+
+                                                                                inset:0;
+
+                                                                                    background:linear-gradient(
+
+                                                                                            transparent,
+
+                                                                                                    rgba(0,0,0,.92)
+
+                                                                                                        );
+
+                                                                                                        }
+
+                                                                                                        .card-content{
+
+                                                                                                            position:relative;
+
+                                                                                                                z-index:2;
+
+                                                                                                                    padding:30px;
+
+                                                                                                                    }
+
+                                                                                                                    .card-content span{
+
+                                                                                                                        color:#D4AF37;
+
+                                                                                                                            font-size:.9rem;
+
+                                                                                                                                letter-spacing:3px;
+
+                                                                                                                                }
+
+                                                                                                                                .card-content h3{
+
+                                                                                                                                    margin:15px 0;
+
+                                                                                                                                        font-size:2rem;
+
+                                                                                                                                        }
+
+                                                                                                                                        .card-content p{
+
+                                                                                                                                            color:#cccccc;
+
+                                                                                                                                                margin-bottom:25px;
+
+                                                                                                                                                }
+
+                                                                                                                                                .explore{
+
+                                                                                                                                                    color:#D4AF37;
+
+                                                                                                                                                        font-weight:600;
+
+                                                                                                                                                        }
+
+                                                                                                                                                        .
+
             }
-            }
-            }
+            }/*==============================
+            WORLD CARDS
+            ==============================*/
+
+            .section-subtitle{
+
+                text-align:center;
+
+                    color:#bbbbbb;
+
+                        max-width:700px;
+
+                            margin:0 auto 60px;
+
+                            }
+
+                            .world-card{
+
+                                position:relative;
+
+                                    min-height:420px;
+
+                                        overflow:hidden;
+
+                                            border-radius:20px;
+
+                                                background:#181818;
+
+                                                    display:flex;
+
+                                                        align-items:flex-end;
+
+                                                            transition:.5s;
+
+                                                                background-size:cover;
+
+                                                                    background-position:center;
+
+                                                                    }
+
+                                                                    .world-card:hover{
+
+                                                                        transform:translateY(-10px);
+
+                                                                        }
+
+                                                                        .card-overlay{
+
+                                                                            position:absolute;
+
+                                                                                inset:0;
+
+                                                                                    background:linear-gradient(
+
+                                                                                            transparent,
+
+                                                                                                    rgba(0,0,0,.92)
+
+                                                                                                        );
+
+                                                                                                        }
+
+                                                                                                        .card-content{
+
+                                                                                                            position:relative;
+
+                                                                                                                z-index:2;
+
+                                                                                                                    padding:30px;
+
+                                                                                                                    }
+
+                                                                                                                    .card-content span{
+
+                                                                                                                        color:#D4AF37;
+
+                                                                                                                            font-size:.9rem;
+
+                                                                                                                                letter-spacing:3px;
+
+                                                                                                                                }
+
+                                                                                                                                .card-content h3{
+
+                                                                                                                                    margin:15px 0;
+
+                                                                                                                                        font-size:2rem;
+
+                                                                                                                                        }
+
+                                                                                                                                        .card-content p{
+
+                                                                                                                                            color:#cccccc;
+
+                                                                                                                                                margin-bottom:25px;
+
+                                                                                                                                                }
+
+                                                                                                                                                .explore{
+
+                                                                                                                                                    color:#D4AF37;
+
+                                                                                                                                                        font-weight:600;
+
+                                                                                                                                                        }
             }
             }
             }
