@@ -1,0 +1,287 @@
+/* ==========================================================
+   THE WORLD OF NININ ANTO
+      Version 2.0
+         typography.css
+         ========================================================== */
+
+         /* ===========================
+            BODY
+            =========================== */
+
+            body{
+
+                font-family:var(--font-body);
+
+                    font-size:var(--fs-md);
+
+                        font-weight:var(--fw-normal);
+
+                            color:var(--text);
+
+                                line-height:1.8;
+
+                                }
+
+                                /* ===========================
+                                   HEADINGS
+                                   =========================== */
+
+                                   h1,
+                                   h2,
+                                   h3,
+                                   h4,
+                                   h5,
+                                   h6{
+
+                                       font-family:var(--font-heading);
+
+                                           color:var(--white);
+
+                                               line-height:1.2;
+
+                                                   font-weight:var(--fw-bold);
+
+                                                       margin-bottom:20px;
+
+                                                       }
+
+                                                       /* ===========================
+                                                          H1
+                                                          =========================== */
+
+                                                          h1{
+
+                                                              font-size:clamp(3rem,7vw,5rem);
+
+                                                                  letter-spacing:2px;
+
+                                                                  }
+
+                                                                  /* ===========================
+                                                                     H2
+                                                                     =========================== */
+
+                                                                     h2{
+
+                                                                         font-size:clamp(2.2rem,5vw,3.5rem);
+
+                                                                         }
+
+                                                                         /* ===========================
+                                                                            H3
+                                                                            =========================== */
+
+                                                                            h3{
+
+                                                                                font-size:clamp(1.6rem,3vw,2.2rem);
+
+                                                                                }
+
+                                                                                /* ===========================
+                                                                                   H4
+                                                                                   =========================== */
+
+                                                                                   h4{
+
+                                                                                       font-size:1.5rem;
+
+                                                                                       }
+
+                                                                                       /* ===========================
+                                                                                          PARAGRAPH
+                                                                                          =========================== */
+
+                                                                                          p{
+
+                                                                                              color:var(--text-light);
+
+                                                                                                  margin-bottom:20px;
+
+                                                                                                      font-size:1rem;
+
+                                                                                                      }
+
+                                                                                                      /* ===========================
+                                                                                                         LINKS
+                                                                                                         =========================== */
+
+                                                                                                         a{
+
+                                                                                                             transition:var(--transition);
+
+                                                                                                             }
+
+                                                                                                             a:hover{
+
+                                                                                                                 color:var(--primary);
+
+                                                                                                                 }
+
+                                                                                                                 /* ===========================
+                                                                                                                    SECTION TITLE
+                                                                                                                    =========================== */
+
+                                                                                                                    .section-title{
+
+                                                                                                                        text-align:center;
+
+                                                                                                                            margin-bottom:20px;
+
+                                                                                                                                color:var(--primary);
+
+                                                                                                                                    text-transform:uppercase;
+
+                                                                                                                                        letter-spacing:4px;
+
+                                                                                                                                        }
+
+                                                                                                                                        /* ===========================
+                                                                                                                                           SECTION SUBTITLE
+                                                                                                                                           =========================== */
+
+                                                                                                                                           .section-subtitle{
+
+                                                                                                                                               max-width:800px;
+
+                                                                                                                                                   margin:0 auto 70px;
+
+                                                                                                                                                       text-align:center;
+
+                                                                                                                                                           color:var(--text-light);
+
+                                                                                                                                                               font-size:1.1rem;
+
+                                                                                                                                                               }
+
+                                                                                                                                                               /* ===========================
+                                                                                                                                                                  GOLD TEXT
+                                                                                                                                                                  =========================== */
+
+                                                                                                                                                                  .text-gold{
+
+                                                                                                                                                                      color:var(--primary);
+
+                                                                                                                                                                      }
+
+                                                                                                                                                                      /* ===========================
+                                                                                                                                                                         WHITE TEXT
+                                                                                                                                                                         =========================== */
+
+                                                                                                                                                                         .text-white{
+
+                                                                                                                                                                             color:var(--white);
+
+                                                                                                                                                                             }
+
+                                                                                                                                                                             /* ===========================
+                                                                                                                                                                                SMALL TEXT
+                                                                                                                                                                                =========================== */
+
+                                                                                                                                                                                .small-text{
+
+                                                                                                                                                                                    font-size:.9rem;
+
+                                                                                                                                                                                        color:var(--text-light);
+
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        /* ===========================
+                                                                                                                                                                                           LEAD TEXT
+                                                                                                                                                                                           =========================== */
+
+                                                                                                                                                                                           .lead{
+
+                                                                                                                                                                                               font-size:1.2rem;
+
+                                                                                                                                                                                                   max-width:850px;
+
+                                                                                                                                                                                                       margin:auto;
+
+                                                                                                                                                                                                           line-height:2;
+
+                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                           /* ===========================
+                                                                                                                                                                                                              BLOCKQUOTE
+                                                                                                                                                                                                              =========================== */
+
+                                                                                                                                                                                                              blockquote{
+
+                                                                                                                                                                                                                  border-left:4px solid var(--primary);
+
+                                                                                                                                                                                                                      padding-left:20px;
+
+                                                                                                                                                                                                                          margin:30px 0;
+
+                                                                                                                                                                                                                              font-style:italic;
+
+                                                                                                                                                                                                                                  color:var(--white);
+
+                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                  /* ===========================
+                                                                                                                                                                                                                                     HIGHLIGHT
+                                                                                                                                                                                                                                     =========================== */
+
+                                                                                                                                                                                                                                     .highlight{
+
+                                                                                                                                                                                                                                         background:linear-gradient(
+                                                                                                                                                                                                                                                 transparent 65%,
+                                                                                                                                                                                                                                                         rgba(212,175,55,.25) 35%
+                                                                                                                                                                                                                                                             );
+
+                                                                                                                                                                                                                                                                 padding:2px 6px;
+
+                                                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                                                 /* ===========================
+                                                                                                                                                                                                                                                                    TEXT SHADOW
+                                                                                                                                                                                                                                                                    =========================== */
+
+                                                                                                                                                                                                                                                                    .text-shadow{
+
+                                                                                                                                                                                                                                                                        text-shadow:
+
+                                                                                                                                                                                                                                                                                0 5px 20px rgba(0,0,0,.45);
+
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                /* ===========================
+                                                                                                                                                                                                                                                                                   UPPERCASE
+                                                                                                                                                                                                                                                                                   =========================== */
+
+                                                                                                                                                                                                                                                                                   .uppercase{
+
+                                                                                                                                                                                                                                                                                       text-transform:uppercase;
+
+                                                                                                                                                                                                                                                                                           letter-spacing:3px;
+
+                                                                                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                                                                                           /* ===========================
+                                                                                                                                                                                                                                                                                              RESPONSIVE
+                                                                                                                                                                                                                                                                                              =========================== */
+
+                                                                                                                                                                                                                                                                                              @media(max-width:768px){
+
+                                                                                                                                                                                                                                                                                                  p{
+
+                                                                                                                                                                                                                                                                                                          font-size:.95rem;
+
+                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                  .lead{
+
+                                                                                                                                                                                                                                                                                                                          font-size:1.05rem;
+
+                                                                                                                                                                                                                                                                                                                                  line-height:1.8;
+
+                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                          .section-subtitle{
+
+                                                                                                                                                                                                                                                                                                                                                  margin-bottom:50px;
+
+                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                      }
