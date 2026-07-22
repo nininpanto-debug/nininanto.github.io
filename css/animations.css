@@ -1,0 +1,375 @@
+/* ==========================================
+   THE WORLD OF NININ ANTO
+      Animation Styles
+      ========================================== */
+
+      /* =========================
+         Fade In
+         ========================= */
+
+         @keyframes fadeIn {
+
+                from{
+                            opacity:0;
+                }
+
+                    to{
+                                opacity:1;
+                    }
+
+                }
+
+                /* =========================
+                   Fade Up
+                   ========================= */
+
+                   @keyframes fadeUp{
+
+                        from{
+
+                                    opacity:0;
+                                            transform:translateY(50px);
+
+                        }
+
+                            to{
+
+                                        opacity:1;
+                                                transform:translateY(0);
+
+                            }
+
+                        }
+
+                        /* =========================
+                           Fade Down
+                           ========================= */
+
+                           @keyframes fadeDown{
+
+                                from{
+
+                                            opacity:0;
+                                                    transform:translateY(-50px);
+
+                                }
+
+                                    to{
+
+                                                opacity:1;
+                                                        transform:translateY(0);
+
+                                    }
+
+                                }
+
+                                /* =========================
+                                   Zoom In
+                                   ========================= */
+
+                                   @keyframes zoomIn{
+
+                                        from{
+
+                                                    opacity:0;
+                                                            transform:scale(.8);
+
+                                        }
+
+                                            to{
+
+                                                        opacity:1;
+                                                                transform:scale(1);
+
+                                            }
+
+                                        }
+
+                                        /* =========================
+                                           Floating Effect
+                                           ========================= */
+
+                                           @keyframes float{
+
+                                                0%{
+
+                                                            transform:translateY(0);
+
+                                                }
+
+                                                    50%{
+
+                                                                transform:translateY(-10px);
+
+                                                    }
+
+                                                        100%{
+
+                                                                    transform:translateY(0);
+
+                                                        }
+
+                                                    }
+
+                                                    /* =========================
+                                                       Glow Effect
+                                                       ========================= */
+
+                                                       @keyframes glow{
+
+                                                            0%{
+
+                                                                        box-shadow:0 0 10px rgba(212,175,55,.2);
+
+                                                            }
+
+                                                                50%{
+
+                                                                            box-shadow:0 0 30px rgba(212,175,55,.6);
+
+                                                                }
+
+                                                                    100%{
+
+                                                                                box-shadow:0 0 10px rgba(212,175,55,.2);
+
+                                                                    }
+
+                                                                }
+
+                                                                /* =========================
+                                                                   Hero Elements
+                                                                   ========================= */
+
+                                                                   .logo{
+
+                                                                        animation:zoomIn 1.5s ease;
+
+                                                                   }
+
+                                                                   .hero h1{
+
+                                                                        animation:fadeDown 1.5s ease;
+
+                                                                   }
+
+                                                                   .hero p{
+
+                                                                        animation:fadeUp 2s ease;
+
+                                                                   }
+
+                                                                   .hero .btn{
+
+                                                                        animation:fadeUp 2.5s ease;
+
+                                                                   }
+
+                                                                   /* =========================
+                                                                      Cards
+                                                                      ========================= */
+
+                                                                      .card{
+
+                                                                            animation:fadeUp .8s ease both;
+
+                                                                      }
+
+                                                                      .card:hover{
+
+                                                                            transform:translateY(-10px) scale(1.03);
+
+                                                                      }
+
+                                                                      /* =========================
+                                                                         Buttons
+                                                                         ========================= */
+
+                                                                         .btn{
+
+                                                                                transition:all .4s ease;
+
+                                                                         }
+
+                                                                         .btn:hover{
+
+                                                                                animation:glow 2s infinite;
+
+                                                                         }
+
+                                                                         /* =========================
+                                                                            Images
+                                                                            ========================= */
+
+                                                                            img:hover{
+
+                                                                                    transform:scale(1.02);
+
+                                                                                        transition:.5s ease;
+
+                                                                            }
+
+                                                                            /* =========================
+                                                                               Floating Logo
+                                                                               ========================= */
+
+                                                                               .logo{
+
+                                                                                    animation:
+
+                                                                                            zoomIn 1.5s ease,
+
+                                                                                                    float 5s ease-in-out infinite;
+
+                                                                               }
+
+                                                                               /* =========================
+                                                                                  Navigation
+                                                                                  ========================= */
+
+                                                                                  nav{
+
+                                                                                        transition:.4s ease;
+
+                                                                                  }
+
+                                                                                  /* =========================
+                                                                                     Scroll Reveal
+                                                                                     ========================= */
+
+                                                                                     .reveal{
+
+                                                                                            opacity:0;
+
+                                                                                                transform:translateY(50px);
+
+                                                                                                    transition:1s;
+
+                                                                                     }
+
+                                                                                     .reveal.active{
+
+                                                                                            opacity:1;
+
+                                                                                                transform:translateY(0);
+
+                                                                                     }
+
+                                                                                     /* =========================
+                                                                                        World Cards Delay
+                                                                                        ========================= */
+
+                                                                                        .world-grid .card:nth-child(1){
+
+                                                                                                animation-delay:.1s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(2){
+
+                                                                                                animation-delay:.2s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(3){
+
+                                                                                                animation-delay:.3s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(4){
+
+                                                                                                animation-delay:.4s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(5){
+
+                                                                                                animation-delay:.5s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(6){
+
+                                                                                                animation-delay:.6s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(7){
+
+                                                                                                animation-delay:.7s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(8){
+
+                                                                                                animation-delay:.8s;
+
+                                                                                        }
+
+                                                                                        .world-grid .card:nth-child(9){
+
+                                                                                                animation-delay:.9s;
+
+                                                                                        }
+
+                                                                                        /* =========================
+                                                                                           Smooth Transition
+                                                                                           ========================= */
+
+                                                                                           *{
+
+                                                                                                transition:
+
+                                                                                                    background .3s ease,
+
+                                                                                                        color .3s ease,
+
+                                                                                                            border .3s ease,
+
+                                                                                                                transform .3s ease;
+
+                                                                                           }
+                                                                                           }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                        }
+                                                                                     }
+                                                                                     }
+                                                                                  }
+                                                                               }
+                                                                            }
+                                                                         }
+                                                                         }
+                                                                      }
+                                                                      }
+                                                                   }
+                                                                   }
+                                                                   }
+                                                                   }
+                                                                    }
+                                                                }
+                                                            }
+                                                       }
+                                                        }
+                                                    }
+                                                }
+                                           }
+                                            }
+                                        }
+                                   }
+                                    }
+                                }
+                           }
+                            }
+                        }
+                   }
+                    }
+                }
+         }
