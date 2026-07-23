@@ -1,690 +1,247 @@
-/* ======================================================
+/* ==========================================================
    THE WORLD OF NININ ANTO
-      Main Stylesheet
-         Version 1.0
-         ====================================================== */
+      Version 2.0
+         style.css
 
-         /* Google Font */
-         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            Master Stylesheet
+            ========================================================== */
 
-         /* Reset */
+            /* ===========================
+               IMPORTS
+               =========================== */
 
-         *{
-                margin:0;
-                    padding:0;
-                        box-sizing:border-box;
-         }
+               @import url("variables.css");
 
-         /* Variables */
+               @import url("reset.css");
 
-         :root{
+               @import url("typography.css");
 
-                --black:#0B0B0B;
-                    --dark:#151515;
-                        --gold:#D4AF37;
-                            --white:#ffffff;
-                                --gray:#bbbbbb;
+               @import url("layout.css");
 
-                                    --transition:0.4s ease;
-                                        --radius:18px;
-                                            --shadow:0 20px 40px rgba(0,0,0,.45);
+               @import url("navigation.css");
 
-         }
+               @import url("hero.css");
 
-         /* Smooth Scroll */
+               @import url("cards.css");
 
-         html{
-                scroll-behavior:smooth;
-         }
+               @import url("sections.css");
 
-         /* Body */
+               @import url("footer.css");
 
-         body{
+               @import url("animations.css");
 
-                font-family:'Poppins',sans-serif;
-                    background:var(--black);
-                        color:var(--white);
-                            overflow-x:hidden;
-                                line-height:1.8;
+               @import url("responsive.css");
 
-         }
 
-         /* Links */
+               /* ==========================================================
+                  GLOBAL
+                  ========================================================== */
 
-         a{
+                  html{
 
-                text-decoration:none;
-                    color:inherit;
+                      scroll-behavior:smooth;
 
-         }
+                      }
 
-         /* Images */
+                      body{
 
-         img{
+                          background:var(--background);
 
-                max-width:100%;
-                    display:block;
+                              color:var(--text);
 
-         }
+                                  font-family:var(--font-body);
 
-         /* Container */
+                                      overflow-x:hidden;
 
-         .container{
+                                      }
 
-                width:90%;
-                    max-width:1200px;
-                        margin:auto;
 
-         }
+                                      /* ==========================================================
+                                         LOADER
+                                         ========================================================== */
 
-         /* =============================
-            Loader
-            ============================= */
+                                         .loader{
 
-            #loader{
+                                             position:fixed;
 
-                    position:fixed;
-                        inset:0;
-                            background:#000;
-                                display:flex;
-                                    justify-content:center;
-                                        align-items:center;
-                                            z-index:9999;
+                                                 inset:0;
 
-            }
+                                                     display:flex;
 
-            #loader h1{
+                                                         justify-content:center;
 
-                    color:var(--gold);
-                        font-size:2rem;
-                            letter-spacing:8px;
+                                                             align-items:center;
 
-            }
+                                                                 background:var(--background);
 
-            /* =============================
-            Hero
-            ============================= */
+                                                                     z-index:9999;
 
-            .hero{
+                                                                         transition:.6s;
 
-                    height:100vh;
-                        position:relative;
-                            overflow:hidden;
+                                                                         }
 
-            }
+                                                                         .loader.hide{
 
-            .hero-video{
+                                                                             opacity:0;
 
-                    position:absolute;
-                        inset:0;
+                                                                                 visibility:hidden;
 
-                            width:100%;
-                                height:100%;
+                                                                                 }
 
-                                    object-fit:cover;
 
-            }
+                                                                                 /* ==========================================================
+                                                                                    BUTTONS
+                                                                                    ========================================================== */
 
-            .overlay{
+                                                                                    .btn{
 
-                    position:absolute;
-                        inset:0;
+                                                                                        display:inline-flex;
 
-                            background:rgba(0,0,0,.65);
+                                                                                            justify-content:center;
 
-            }
+                                                                                                align-items:center;
 
-            .hero-content{
+                                                                                                    gap:10px;
 
-                    position:relative;
-                        z-index:2;
+                                                                                                        padding:15px 35px;
 
-                            height:100%;
+                                                                                                            border-radius:50px;
 
-                                display:flex;
-                                    flex-direction:column;
+                                                                                                                font-weight:600;
 
-                                        justify-content:center;
-                                            align-items:center;
+                                                                                                                    transition:var(--transition);
 
-                                                text-align:center;
+                                                                                                                        cursor:pointer;
 
-                                                    padding:20px;
+                                                                                                                        }
 
-            }
+                                                                                                                        .btn-primary{
 
-            /* Logo */
+                                                                                                                            background:var(--primary);
 
-            .logo{
-
-                    width:180px;
-                        margin-bottom:30px;
-
-            }
-
-            /* Hero Heading */
-
-            .hero h1{
-
-                    font-size:3rem;
-                        margin-bottom:20px;
-
-            }
-
-            /* Hero Text */
-
-            .hero p{
-
-                    color:var(--gray);
-                        font-size:1.2rem;
-                            margin-bottom:40px;
-
-            }
-
-            /* =============================
-            Button
-            ============================= */
-
-            .btn{
-
-                    display:inline-block;
-
-                        background:var(--gold);
-
-                            color:#000;
-
-                                padding:16px 40px;
-
-                                    border-radius:50px;
-
-                                        font-weight:600;
-
-                                            transition:var(--transition);
-
-            }
-
-            .btn:hover{
-
-                    transform:translateY(-5px);
-
-                        box-shadow:0 15px 30px rgba(212,175,55,.4);
-
-            }
-
-            /* =============================
-            Navigation
-            ============================= */
-
-            nav{
-
-                    position:sticky;
-                        top:0;
-
-                            background:rgba(10,10,10,.85);
-
-                                backdrop-filter:blur(12px);
-
-                                    display:flex;
-
-                                        justify-content:space-between;
-
-                                            align-items:center;
-
-                                                padding:18px 8%;
-
-                                                    z-index:500;
-
-            }
-
-            .nav-logo{
-
-                    color:var(--gold);
-
-                        font-weight:700;
-
-                            font-size:1.2rem;
-
-            }
-
-            nav ul{
-
-                    display:flex;
-
-                        gap:25px;
-
-                            list-style:none;
-
-            }
-
-            nav a{
-
-                    transition:.3s;
-
-            }
-
-            nav a:hover{
-
-                    color:var(--gold);
-
-            }
-
-            /* =============================
-            Sections
-            ============================= */
-
-            section{
-
-                    padding:100px 0;
-
-            }
-
-            section h2{
-
-                    text-align:center;
-
-                        font-size:2.5rem;
-
-                            margin-bottom:40px;
-
-                                color:var(--gold);
-
-            }
-
-            /* =============================
-            World Cards
-            ============================= */
-
-            .world-grid{
-
-                    display:grid;
-
-                        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-                            gap:30px;
-
-            }
-
-            .card{
-
-                    background:var(--dark);
-
-                        border:1px solid rgba(255,255,255,.05);
-
-                            border-radius:var(--radius);
-
-                                padding:40px 30px;
-
-                                    transition:.4s;
-
-            }
-
-            .card h3{
-
-                    margin-bottom:15px;
-
-                        color:var(--gold);
-
-            }
-
-            .card p{
-
-                    color:var(--gray);
-
-            }
-
-            .card:hover{
-
-                    transform:translateY(-10px);
-
-                        border-color:var(--gold);
-
-                            box-shadow:var(--shadow);
-
-            }
-
-            /* =============================
-            Projects
-            ============================= */
-
-            .project-list{
-
-                    display:grid;
-
-                        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-                            gap:30px;
-
-            }
-
-            .project-list article{
-
-                    background:var(--dark);
-
-                        padding:30px;
-
-                            border-radius:var(--radius);
-
-            }
-
-            /* =============================
-            Contact
-            ============================= */
-
-            #contact{
-
-                    text-align:center;
-
-            }
-
-            #contact p{
-
-                    max-width:650px;
-
-                        margin:0 auto 30px;
-
-                            color:var(--gray);
-
-            }
-
-            /* =============================
-            Footer
-            ============================= */
-
-            footer{
-
-                    padding:40px 20px;
-
-                        text-align:center;
-
-                            border-top:1px solid rgba(255,255,255,.08);
-
-                                color:var(--gray);
-
-            }
-
-            footer p{
-
-                    margin:8px 0;
-
-            }
-
-            /* =============================
-            Scrollbar
-            ============================= */
-
-            ::-webkit-scrollbar{
-
-                    width:10px;
-
-            }
-
-            ::-webkit-scrollbar-track{
-
-                    background:#111;
-
-            }
-
-            ::-webkit-scrollbar-thumb{
-
-                    background:var(--gold);
-
-                        border-radius:20px;
-
-            }
-
-            ::-webkit-scrollbar-thumb:hover{
-
-                    background:#f1c94d;
-
-            }
-            }/*==============================
-            WORLD CARDS
-            ==============================*/
-
-            .section-subtitle{
-
-                text-align:center;
-
-                    color:#bbbbbb;
-
-                        max-width:700px;
-
-                            margin:0 auto 60px;
-
-                            }
-
-                            .world-card{
-
-                                position:relative;
-
-                                    min-height:420px;
-
-                                        overflow:hidden;
-
-                                            border-radius:20px;
-
-                                                background:#181818;
-
-                                                    display:flex;
-
-                                                        align-items:flex-end;
-
-                                                            transition:.5s;
-
-                                                                background-size:cover;
-
-                                                                    background-position:center;
-
-                                                                    }
-
-                                                                    .world-card:hover{
-
-                                                                        transform:translateY(-10px);
-
-                                                                        }
-
-                                                                        .card-overlay{
-
-                                                                            position:absolute;
-
-                                                                                inset:0;
-
-                                                                                    background:linear-gradient(
-
-                                                                                            transparent,
-
-                                                                                                    rgba(0,0,0,.92)
-
-                                                                                                        );
-
-                                                                                                        }
-
-                                                                                                        .card-content{
-
-                                                                                                            position:relative;
-
-                                                                                                                z-index:2;
-
-                                                                                                                    padding:30px;
-
-                                                                                                                    }
-
-                                                                                                                    .card-content span{
-
-                                                                                                                        color:#D4AF37;
-
-                                                                                                                            font-size:.9rem;
-
-                                                                                                                                letter-spacing:3px;
+                                                                                                                                color:#000;
 
                                                                                                                                 }
 
-                                                                                                                                .card-content h3{
+                                                                                                                                .btn-primary:hover{
 
-                                                                                                                                    margin:15px 0;
+                                                                                                                                    transform:translateY(-4px);
 
-                                                                                                                                        font-size:2rem;
-
-                                                                                                                                        }
-
-                                                                                                                                        .card-content p{
-
-                                                                                                                                            color:#cccccc;
-
-                                                                                                                                                margin-bottom:25px;
-
-                                                                                                                                                }
-
-                                                                                                                                                .explore{
-
-                                                                                                                                                    color:#D4AF37;
-
-                                                                                                                                                        font-weight:600;
-
-                                                                                                                                                        }
-
-                                                                                                                                                        .
-
-            }
-            }/*==============================
-            WORLD CARDS
-            ==============================*/
-
-            .section-subtitle{
-
-                text-align:center;
-
-                    color:#bbbbbb;
-
-                        max-width:700px;
-
-                            margin:0 auto 60px;
-
-                            }
-
-                            .world-card{
-
-                                position:relative;
-
-                                    min-height:420px;
-
-                                        overflow:hidden;
-
-                                            border-radius:20px;
-
-                                                background:#181818;
-
-                                                    display:flex;
-
-                                                        align-items:flex-end;
-
-                                                            transition:.5s;
-
-                                                                background-size:cover;
-
-                                                                    background-position:center;
-
-                                                                    }
-
-                                                                    .world-card:hover{
-
-                                                                        transform:translateY(-10px);
-
-                                                                        }
-
-                                                                        .card-overlay{
-
-                                                                            position:absolute;
-
-                                                                                inset:0;
-
-                                                                                    background:linear-gradient(
-
-                                                                                            transparent,
-
-                                                                                                    rgba(0,0,0,.92)
-
-                                                                                                        );
-
-                                                                                                        }
-
-                                                                                                        .card-content{
-
-                                                                                                            position:relative;
-
-                                                                                                                z-index:2;
-
-                                                                                                                    padding:30px;
-
-                                                                                                                    }
-
-                                                                                                                    .card-content span{
-
-                                                                                                                        color:#D4AF37;
-
-                                                                                                                            font-size:.9rem;
-
-                                                                                                                                letter-spacing:3px;
-
-                                                                                                                                }
-
-                                                                                                                                .card-content h3{
-
-                                                                                                                                    margin:15px 0;
-
-                                                                                                                                        font-size:2rem;
+                                                                                                                                        box-shadow:var(--gold-shadow);
 
                                                                                                                                         }
 
-                                                                                                                                        .card-content p{
+                                                                                                                                        .btn-outline{
 
-                                                                                                                                            color:#cccccc;
+                                                                                                                                            border:2px solid var(--primary);
 
-                                                                                                                                                margin-bottom:25px;
+                                                                                                                                                color:var(--primary);
 
                                                                                                                                                 }
 
-                                                                                                                                                .explore{
+                                                                                                                                                .btn-outline:hover{
 
-                                                                                                                                                    color:#D4AF37;
+                                                                                                                                                    background:var(--primary);
 
-                                                                                                                                                        font-weight:600;
+                                                                                                                                                        color:#000;
 
                                                                                                                                                         }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-            }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
+
+
+                                                                                                                                                        /* ==========================================================
+                                                                                                                                                           SECTION SPACING
+                                                                                                                                                           ========================================================== */
+
+                                                                                                                                                           main{
+
+                                                                                                                                                               overflow:hidden;
+
+                                                                                                                                                               }
+
+                                                                                                                                                               section{
+
+                                                                                                                                                                   position:relative;
+
+                                                                                                                                                                   }
+
+
+                                                                                                                                                                   /* ==========================================================
+                                                                                                                                                                      IMAGES
+                                                                                                                                                                      ========================================================== */
+
+                                                                                                                                                                      img{
+
+                                                                                                                                                                          user-select:none;
+
+                                                                                                                                                                              -webkit-user-drag:none;
+
+                                                                                                                                                                              }
+
+
+                                                                                                                                                                              /* ==========================================================
+                                                                                                                                                                                 LINKS
+                                                                                                                                                                                 ========================================================== */
+
+                                                                                                                                                                                 a{
+
+                                                                                                                                                                                     text-decoration:none;
+
+                                                                                                                                                                                     }
+
+
+                                                                                                                                                                                     /* ==========================================================
+                                                                                                                                                                                        UTILITIES
+                                                                                                                                                                                        ========================================================== */
+
+                                                                                                                                                                                        .hide{
+
+                                                                                                                                                                                            display:none;
+
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .show{
+
+                                                                                                                                                                                                display:block;
+
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                .text-center{
+
+                                                                                                                                                                                                    text-align:center;
+
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .round{
+
+                                                                                                                                                                                                        border-radius:50%;
+
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .shadow{
+
+                                                                                                                                                                                                            box-shadow:var(--shadow-medium);
+
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .gold{
+
+                                                                                                                                                                                                                color:var(--primary);
+
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                .bg-dark{
+
+                                                                                                                                                                                                                    background:var(--background);
+
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    .bg-surface{
+
+                                                                                                                                                                                                                        background:var(--surface);
+
+                                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                                        /* ==========================================================
+                                                                                                                                                                                                                           END OF FILE
+                                                                                                                                                                                                                           ========================================================== */
