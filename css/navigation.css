@@ -1,0 +1,303 @@
+/* ==========================================================
+   THE WORLD OF NININ ANTO
+      Version 2.0
+         navigation.css
+         ========================================================== */
+
+         /* ===========================
+            NAVBAR
+            =========================== */
+
+            .navbar{
+
+                position:fixed;
+
+                    top:0;
+
+                        left:0;
+
+                            width:100%;
+
+                                height:80px;
+
+                                    z-index:var(--z-nav);
+
+                                        transition:var(--transition);
+
+                                            background:rgba(0,0,0,.25);
+
+                                                backdrop-filter:blur(18px);
+
+                                                    -webkit-backdrop-filter:blur(18px);
+
+                                                        border-bottom:1px solid var(--border);
+
+                                                        }
+
+                                                        /* Navbar when scrolling */
+
+                                                        .navbar.scrolled{
+
+                                                            height:70px;
+
+                                                                background:rgba(5,5,5,.92);
+
+                                                                    box-shadow:var(--shadow-medium);
+
+                                                                    }
+
+                                                                    /* ===========================
+                                                                       CONTAINER
+                                                                       =========================== */
+
+                                                                       .nav-container{
+
+                                                                           width:min(92%,var(--container));
+
+                                                                               height:100%;
+
+                                                                                   margin:auto;
+
+                                                                                       display:flex;
+
+                                                                                           align-items:center;
+
+                                                                                               justify-content:space-between;
+
+                                                                                               }
+
+                                                                                               /* ===========================
+                                                                                                  BRAND
+                                                                                                  =========================== */
+
+                                                                                                  .brand{
+
+                                                                                                      display:flex;
+
+                                                                                                          align-items:center;
+
+                                                                                                              gap:15px;
+
+                                                                                                                  color:var(--white);
+
+                                                                                                                      font-family:var(--font-heading);
+
+                                                                                                                          font-size:1.1rem;
+
+                                                                                                                              letter-spacing:2px;
+
+                                                                                                                              }
+
+                                                                                                                              .brand img{
+
+                                                                                                                                  width:48px;
+
+                                                                                                                                      height:48px;
+
+                                                                                                                                          object-fit:contain;
+
+                                                                                                                                          }
+
+                                                                                                                                          .brand span{
+
+                                                                                                                                              color:var(--primary);
+
+                                                                                                                                              }
+
+                                                                                                                                              /* ===========================
+                                                                                                                                                 NAV LINKS
+                                                                                                                                                 =========================== */
+
+                                                                                                                                                 .nav-links{
+
+                                                                                                                                                     display:flex;
+
+                                                                                                                                                         align-items:center;
+
+                                                                                                                                                             gap:35px;
+
+                                                                                                                                                             }
+
+                                                                                                                                                             .nav-links a{
+
+                                                                                                                                                                 position:relative;
+
+                                                                                                                                                                     color:var(--white);
+
+                                                                                                                                                                         font-weight:500;
+
+                                                                                                                                                                             transition:var(--transition);
+
+                                                                                                                                                                             }
+
+                                                                                                                                                                             .nav-links a:hover{
+
+                                                                                                                                                                                 color:var(--primary);
+
+                                                                                                                                                                                 }
+
+                                                                                                                                                                                 /* Underline Animation */
+
+                                                                                                                                                                                 .nav-links a::after{
+
+                                                                                                                                                                                     content:"";
+
+                                                                                                                                                                                         position:absolute;
+
+                                                                                                                                                                                             left:0;
+
+                                                                                                                                                                                                 bottom:-8px;
+
+                                                                                                                                                                                                     width:0;
+
+                                                                                                                                                                                                         height:2px;
+
+                                                                                                                                                                                                             background:var(--primary);
+
+                                                                                                                                                                                                                 transition:var(--transition);
+
+                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                 .nav-links a:hover::after,
+
+                                                                                                                                                                                                                 .nav-links a.active::after{
+
+                                                                                                                                                                                                                     width:100%;
+
+                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                     /* ===========================
+                                                                                                                                                                                                                        CTA BUTTON
+                                                                                                                                                                                                                        =========================== */
+
+                                                                                                                                                                                                                        .nav-button{
+
+                                                                                                                                                                                                                            padding:12px 24px;
+
+                                                                                                                                                                                                                                border-radius:50px;
+
+                                                                                                                                                                                                                                    background:var(--primary);
+
+                                                                                                                                                                                                                                        color:#000;
+
+                                                                                                                                                                                                                                            font-weight:600;
+
+                                                                                                                                                                                                                                                transition:var(--transition);
+
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .nav-button:hover{
+
+                                                                                                                                                                                                                                                    transform:translateY(-2px);
+
+                                                                                                                                                                                                                                                        box-shadow:var(--gold-shadow);
+
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        /* ===========================
+                                                                                                                                                                                                                                                           MOBILE MENU BUTTON
+                                                                                                                                                                                                                                                           =========================== */
+
+                                                                                                                                                                                                                                                           .menu-toggle{
+
+                                                                                                                                                                                                                                                               display:none;
+
+                                                                                                                                                                                                                                                                   width:46px;
+
+                                                                                                                                                                                                                                                                       height:46px;
+
+                                                                                                                                                                                                                                                                           border-radius:50%;
+
+                                                                                                                                                                                                                                                                               align-items:center;
+
+                                                                                                                                                                                                                                                                                   justify-content:center;
+
+                                                                                                                                                                                                                                                                                       color:var(--white);
+
+                                                                                                                                                                                                                                                                                           font-size:1.5rem;
+
+                                                                                                                                                                                                                                                                                               cursor:pointer;
+
+                                                                                                                                                                                                                                                                                                   background:rgba(255,255,255,.05);
+
+                                                                                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                                                                                   /* ===========================
+                                                                                                                                                                                                                                                                                                      MOBILE MENU
+                                                                                                                                                                                                                                                                                                      =========================== */
+
+                                                                                                                                                                                                                                                                                                      @media(max-width:900px){
+
+                                                                                                                                                                                                                                                                                                          .menu-toggle{
+
+                                                                                                                                                                                                                                                                                                                  display:flex;
+
+                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                          .nav-links{
+
+                                                                                                                                                                                                                                                                                                                                  position:fixed;
+
+                                                                                                                                                                                                                                                                                                                                          top:80px;
+
+                                                                                                                                                                                                                                                                                                                                                  left:-100%;
+
+                                                                                                                                                                                                                                                                                                                                                          width:100%;
+
+                                                                                                                                                                                                                                                                                                                                                                  height:calc(100vh - 80px);
+
+                                                                                                                                                                                                                                                                                                                                                                          background:#050505;
+
+                                                                                                                                                                                                                                                                                                                                                                                  display:flex;
+
+                                                                                                                                                                                                                                                                                                                                                                                          flex-direction:column;
+
+                                                                                                                                                                                                                                                                                                                                                                                                  justify-content:flex-start;
+
+                                                                                                                                                                                                                                                                                                                                                                                                          align-items:center;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                  gap:35px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                          padding-top:60px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                  transition:.45s ease;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          .nav-links.active{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  left:0;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          .nav-button{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  margin-top:20px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                         SMALL DEVICES
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                         =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @media(max-width:500px){
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                             .brand{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     font-size:.9rem;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             letter-spacing:1px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     .brand img{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             width:40px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     height:40px;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
