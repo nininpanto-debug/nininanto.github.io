@@ -1,375 +1,419 @@
-/* ==========================================
+/* ==========================================================
    THE WORLD OF NININ ANTO
-      Animation Styles
-      ========================================== */
+      Version 2.0
+         animations.css
+         ========================================================== */
 
-      /* =========================
-         Fade In
-         ========================= */
+         /* ===========================
+            FADE IN
+            =========================== */
 
-         @keyframes fadeIn {
+            @keyframes fadeIn{
 
                 from{
-                            opacity:0;
-                }
 
-                    to{
-                                opacity:1;
-                    }
+                        opacity:0;
 
-                }
+                            }
 
-                /* =========================
-                   Fade Up
-                   ========================= */
-
-                   @keyframes fadeUp{
-
-                        from{
-
-                                    opacity:0;
-                                            transform:translateY(50px);
-
-                        }
-
-                            to{
+                                to{
 
                                         opacity:1;
-                                                transform:translateY(0);
-
-                            }
-
-                        }
-
-                        /* =========================
-                           Fade Down
-                           ========================= */
-
-                           @keyframes fadeDown{
-
-                                from{
-
-                                            opacity:0;
-                                                    transform:translateY(-50px);
-
-                                }
-
-                                    to{
-
-                                                opacity:1;
-                                                        transform:translateY(0);
-
-                                    }
-
-                                }
-
-                                /* =========================
-                                   Zoom In
-                                   ========================= */
-
-                                   @keyframes zoomIn{
-
-                                        from{
-
-                                                    opacity:0;
-                                                            transform:scale(.8);
-
-                                        }
-
-                                            to{
-
-                                                        opacity:1;
-                                                                transform:scale(1);
 
                                             }
 
-                                        }
-
-                                        /* =========================
-                                           Floating Effect
-                                           ========================= */
-
-                                           @keyframes float{
-
-                                                0%{
-
-                                                            transform:translateY(0);
-
-                                                }
-
-                                                    50%{
-
-                                                                transform:translateY(-10px);
-
-                                                    }
-
-                                                        100%{
-
-                                                                    transform:translateY(0);
-
-                                                        }
-
-                                                    }
-
-                                                    /* =========================
-                                                       Glow Effect
-                                                       ========================= */
-
-                                                       @keyframes glow{
-
-                                                            0%{
-
-                                                                        box-shadow:0 0 10px rgba(212,175,55,.2);
-
-                                                            }
-
-                                                                50%{
-
-                                                                            box-shadow:0 0 30px rgba(212,175,55,.6);
-
-                                                                }
-
-                                                                    100%{
-
-                                                                                box-shadow:0 0 10px rgba(212,175,55,.2);
-
-                                                                    }
-
-                                                                }
-
-                                                                /* =========================
-                                                                   Hero Elements
-                                                                   ========================= */
-
-                                                                   .logo{
-
-                                                                        animation:zoomIn 1.5s ease;
-
-                                                                   }
-
-                                                                   .hero h1{
-
-                                                                        animation:fadeDown 1.5s ease;
-
-                                                                   }
-
-                                                                   .hero p{
-
-                                                                        animation:fadeUp 2s ease;
-
-                                                                   }
-
-                                                                   .hero .btn{
-
-                                                                        animation:fadeUp 2.5s ease;
-
-                                                                   }
-
-                                                                   /* =========================
-                                                                      Cards
-                                                                      ========================= */
-
-                                                                      .card{
-
-                                                                            animation:fadeUp .8s ease both;
-
-                                                                      }
-
-                                                                      .card:hover{
-
-                                                                            transform:translateY(-10px) scale(1.03);
-
-                                                                      }
-
-                                                                      /* =========================
-                                                                         Buttons
-                                                                         ========================= */
-
-                                                                         .btn{
-
-                                                                                transition:all .4s ease;
-
-                                                                         }
-
-                                                                         .btn:hover{
-
-                                                                                animation:glow 2s infinite;
-
-                                                                         }
-
-                                                                         /* =========================
-                                                                            Images
-                                                                            ========================= */
-
-                                                                            img:hover{
-
-                                                                                    transform:scale(1.02);
-
-                                                                                        transition:.5s ease;
-
-                                                                            }
-
-                                                                            /* =========================
-                                                                               Floating Logo
-                                                                               ========================= */
-
-                                                                               .logo{
-
-                                                                                    animation:
-
-                                                                                            zoomIn 1.5s ease,
-
-                                                                                                    float 5s ease-in-out infinite;
-
-                                                                               }
-
-                                                                               /* =========================
-                                                                                  Navigation
-                                                                                  ========================= */
-
-                                                                                  nav{
-
-                                                                                        transition:.4s ease;
-
-                                                                                  }
-
-                                                                                  /* =========================
-                                                                                     Scroll Reveal
-                                                                                     ========================= */
-
-                                                                                     .reveal{
-
-                                                                                            opacity:0;
-
-                                                                                                transform:translateY(50px);
-
-                                                                                                    transition:1s;
-
-                                                                                     }
-
-                                                                                     .reveal.active{
-
-                                                                                            opacity:1;
-
-                                                                                                transform:translateY(0);
-
-                                                                                     }
-
-                                                                                     /* =========================
-                                                                                        World Cards Delay
-                                                                                        ========================= */
-
-                                                                                        .world-grid .card:nth-child(1){
-
-                                                                                                animation-delay:.1s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(2){
-
-                                                                                                animation-delay:.2s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(3){
-
-                                                                                                animation-delay:.3s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(4){
-
-                                                                                                animation-delay:.4s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(5){
-
-                                                                                                animation-delay:.5s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(6){
-
-                                                                                                animation-delay:.6s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(7){
-
-                                                                                                animation-delay:.7s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(8){
-
-                                                                                                animation-delay:.8s;
-
-                                                                                        }
-
-                                                                                        .world-grid .card:nth-child(9){
-
-                                                                                                animation-delay:.9s;
-
-                                                                                        }
-
-                                                                                        /* =========================
-                                                                                           Smooth Transition
-                                                                                           ========================= */
-
-                                                                                           *{
-
-                                                                                                transition:
-
-                                                                                                    background .3s ease,
-
-                                                                                                        color .3s ease,
-
-                                                                                                            border .3s ease,
-
-                                                                                                                transform .3s ease;
-
-                                                                                           }
-                                                                                           }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                        }
-                                                                                     }
-                                                                                     }
-                                                                                  }
-                                                                               }
-                                                                            }
-                                                                         }
-                                                                         }
-                                                                      }
-                                                                      }
-                                                                   }
-                                                                   }
-                                                                   }
-                                                                   }
-                                                                    }
-                                                                }
-                                                            }
-                                                       }
-                                                        }
-                                                    }
-                                                }
-                                           }
                                             }
-                                        }
-                                   }
-                                    }
-                                }
-                           }
-                            }
-                        }
-                   }
-                    }
-                }
-         }
+
+                                            /* ===========================
+                                               FADE UP
+                                               =========================== */
+
+                                               @keyframes fadeUp{
+
+                                                   from{
+
+                                                           opacity:0;
+
+                                                                   transform:translateY(50px);
+
+                                                                       }
+
+                                                                           to{
+
+                                                                                   opacity:1;
+
+                                                                                           transform:translateY(0);
+
+                                                                                               }
+
+                                                                                               }
+
+                                                                                               /* ===========================
+                                                                                                  FADE DOWN
+                                                                                                  =========================== */
+
+                                                                                                  @keyframes fadeDown{
+
+                                                                                                      from{
+
+                                                                                                              opacity:0;
+
+                                                                                                                      transform:translateY(-50px);
+
+                                                                                                                          }
+
+                                                                                                                              to{
+
+                                                                                                                                      opacity:1;
+
+                                                                                                                                              transform:translateY(0);
+
+                                                                                                                                                  }
+
+                                                                                                                                                  }
+
+                                                                                                                                                  /* ===========================
+                                                                                                                                                     FADE LEFT
+                                                                                                                                                     =========================== */
+
+                                                                                                                                                     @keyframes fadeLeft{
+
+                                                                                                                                                         from{
+
+                                                                                                                                                                 opacity:0;
+
+                                                                                                                                                                         transform:translateX(-60px);
+
+                                                                                                                                                                             }
+
+                                                                                                                                                                                 to{
+
+                                                                                                                                                                                         opacity:1;
+
+                                                                                                                                                                                                 transform:translateX(0);
+
+                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                     /* ===========================
+                                                                                                                                                                                                        FADE RIGHT
+                                                                                                                                                                                                        =========================== */
+
+                                                                                                                                                                                                        @keyframes fadeRight{
+
+                                                                                                                                                                                                            from{
+
+                                                                                                                                                                                                                    opacity:0;
+
+                                                                                                                                                                                                                            transform:translateX(60px);
+
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                    to{
+
+                                                                                                                                                                                                                                            opacity:1;
+
+                                                                                                                                                                                                                                                    transform:translateX(0);
+
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        /* ===========================
+                                                                                                                                                                                                                                                           ZOOM IN
+                                                                                                                                                                                                                                                           =========================== */
+
+                                                                                                                                                                                                                                                           @keyframes zoomIn{
+
+                                                                                                                                                                                                                                                               from{
+
+                                                                                                                                                                                                                                                                       opacity:0;
+
+                                                                                                                                                                                                                                                                               transform:scale(.85);
+
+                                                                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                                                                       to{
+
+                                                                                                                                                                                                                                                                                               opacity:1;
+
+                                                                                                                                                                                                                                                                                                       transform:scale(1);
+
+                                                                                                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                                                                                                           /* ===========================
+                                                                                                                                                                                                                                                                                                              FLOAT
+                                                                                                                                                                                                                                                                                                              =========================== */
+
+                                                                                                                                                                                                                                                                                                              @keyframes floating{
+
+                                                                                                                                                                                                                                                                                                                  0%{
+
+                                                                                                                                                                                                                                                                                                                          transform:translateY(0);
+
+                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                  50%{
+
+                                                                                                                                                                                                                                                                                                                                          transform:translateY(-12px);
+
+                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                  100%{
+
+                                                                                                                                                                                                                                                                                                                                                          transform:translateY(0);
+
+                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                              /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                 ROTATE
+                                                                                                                                                                                                                                                                                                                                                                 =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                 @keyframes rotateSlow{
+
+                                                                                                                                                                                                                                                                                                                                                                     from{
+
+                                                                                                                                                                                                                                                                                                                                                                             transform:rotate(0deg);
+
+                                                                                                                                                                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                                                                                                                                                                     to{
+
+                                                                                                                                                                                                                                                                                                                                                                                             transform:rotate(360deg);
+
+                                                                                                                                                                                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                                                                                                                                                                                 /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                    GLOW
+                                                                                                                                                                                                                                                                                                                                                                                                    =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                    @keyframes glow{
+
+                                                                                                                                                                                                                                                                                                                                                                                                        0%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                box-shadow:0 0 0 rgba(212,175,55,.15);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        50%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                box-shadow:0 0 35px rgba(212,175,55,.45);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                        100%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                box-shadow:0 0 0 rgba(212,175,55,.15);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       SHINE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       @keyframes shine{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                           0%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   background-position:-200% center;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           100%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   background-position:200% center;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          BOUNCE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @keyframes bounce{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              0%,20%,50%,80%,100%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      transform:translateY(0);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              40%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      transform:translateY(-12px);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              60%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      transform:translateY(-6px);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             PULSE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @keyframes pulse{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         transform:scale(1);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 50%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         transform:scale(1.05);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 100%{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         transform:scale(1);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                REVEAL CLASSES
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .fade-in{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    animation:fadeIn .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .fade-up{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        animation:fadeUp .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .fade-down{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            animation:fadeDown .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .fade-left{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                animation:fadeLeft .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .fade-right{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    animation:fadeRight .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .zoom-in{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        animation:zoomIn .9s ease both;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .float{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            animation:floating 4s ease-in-out infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .rotate{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                animation:rotateSlow 20s linear infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .glow{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    animation:glow 3s ease infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .bounce{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        animation:bounce 2s infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .pulse{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            animation:pulse 2.5s ease infinite;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               STAGGER DELAYS
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               .delay-1{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   animation-delay:.2s;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   .delay-2{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       animation-delay:.4s;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       .delay-3{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           animation-delay:.6s;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           .delay-4{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               animation-delay:.8s;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               .delay-5{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   animation-delay:1s;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      SCROLL REVEAL
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      =========================== */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      .reveal{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          opacity:0;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              transform:translateY(40px);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  transition:
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          opacity .8s ease,
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  transform .8s ease;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  .reveal.active{
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      opacity:1;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          transform:translateY(0);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
