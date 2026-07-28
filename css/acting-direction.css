@@ -15,10 +15,10 @@
 
                       body{
                           font-family:'Poppins',sans-serif;
-                              background:#0a0a0a;
-                                  color:#fff;
+                              background: #0a0a0a;
+                                  color: #fff;
                                       line-height:1.7;
-                                          overflow-x:visible;
+                                          overflow:visible;
                                           }
 
                                           /* ===========================
