@@ -56,3 +56,65 @@
                                                           .casting-entry:hover i {
                                                             transform: translateX(5px);
                                                             }
+                                                            /* Public Contact Details */
+
+                                                            .contact-content {
+                                                              width: 100%;
+                                                              }
+
+                                                              .contact-intro {
+                                                                max-width: 700px;
+                                                                }
+
+                                                                .public-contact-links {
+                                                                  display: grid;
+                                                                    grid-template-columns: 1fr;
+                                                                      gap: 10px;
+                                                                        margin-top: 24px;
+                                                                        }
+
+                                                                        .public-contact-links a {
+                                                                          display: flex;
+                                                                            align-items: center;
+                                                                              gap: 14px;
+                                                                                min-height: 62px;
+                                                                                  padding: 12px 15px;
+                                                                                    border: 1px solid rgba(201, 166, 70, 0.28);
+                                                                                      border-radius: 12px;
+                                                                                        background: rgba(255, 255, 255, 0.02);
+                                                                                          color: #e5c96c;
+                                                                                            transition: all 0.3s ease;
+                                                                                            }
+
+                                                                                            .public-contact-links a:hover {
+                                                                                              border-color: #e5c96c;
+                                                                                                background: rgba(201, 166, 70, 0.08);
+                                                                                                  transform: translateY(-2px);
+                                                                                                  }
+
+                                                                                                  .public-contact-links i {
+                                                                                                    width: 22px;
+                                                                                                      text-align: center;
+                                                                                                        font-size: 16px;
+                                                                                                          color: #c9a646;
+                                                                                                          }
+
+                                                                                                          .public-contact-links span {
+                                                                                                            display: flex;
+                                                                                                              flex-direction: column;
+                                                                                                                gap: 2px;
+                                                                                                                  font-size: 12px;
+                                                                                                                  }
+
+                                                                                                                  .public-contact-links small {
+                                                                                                                    color: #9d988e;
+                                                                                                                      font-size: 8px;
+                                                                                                                        font-weight: 600;
+                                                                                                                          letter-spacing: 1.8px;
+                                                                                                                          }
+
+                                                                                                                          @media (min-width: 650px) {
+                                                                                                                            .public-contact-links {
+                                                                                                                                grid-template-columns: 1fr 1fr;
+                                                                                                                                  }
+                                                                                                                                  }
