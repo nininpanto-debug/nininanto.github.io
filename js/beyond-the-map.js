@@ -1,48 +1,44 @@
-document.addEventListener("DOMContentLoaded", function(){
-  const cover=document.getElementById("book-cover");
-  const enter=document.getElementById("enter-book");
-  const stage=document.getElementById("book-stage");
-  const turn=document.getElementById("turn-1");
-  const backPage=document.getElementById("story-back-page");
-  const video=document.getElementById("travel-video");
+document.addEventListener('DOMContentLoaded',()=>{
+  const cover=document.getElementById('cover');
+  const kollam=document.getElementById('kollam-sheet');
+  const kannur=document.getElementById('kannur-sheet');
+  const open=document.getElementById('open-book');
+  const prev=document.getElementById('prev-page');
+  const next=document.getElementById('next-page');
+  const controls=document.getElementById('book-controls');
+  const status=document.getElementById('page-status');
+  const hint=document.getElementById('gesture-hint');
+  let state=0; // 0 cover, 1 Kollam front, 2 Kollam video, 3 Kannur front, 4 Kannur video
 
-  function openBook(){
-    cover.classList.add("open");
-    setTimeout(()=>stage.scrollIntoView({behavior:"smooth",block:"center"}),180);
+  function processInstagram(){
+    if(window.instgrm && window.instgrm.Embeds) window.instgrm.Embeds.process();
   }
-  enter.addEventListener("click",openBook);
-  cover.addEventListener("click",openBook);
-
-  turn.addEventListener("click",function(){
-    turn.classList.toggle("flipped");
-    backPage.classList.add("visible");
-    backPage.scrollIntoView({behavior:"smooth",block:"center"});
-    window.setTimeout(()=>{
-      if(window.instgrm && window.instgrm.Embeds){window.instgrm.Embeds.process();}
-    },500);
-  });
-
-  document.querySelectorAll(".chapter-links button").forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      openBook();
-      if(btn.dataset.chapter==="kannur"){
-        turn.classList.add("flipped");
-        backPage.classList.add("visible");
-      }else{
-        turn.classList.remove("flipped");
-        backPage.classList.remove("visible");
-      }
-      window.setTimeout(()=>{
-        if(window.instgrm && window.instgrm.Embeds){window.instgrm.Embeds.process();}
-      },400);
-    });
-  });
-
-  // Try to start the ambient travel video. Muted inline video is normally
-  // permitted to autoplay by mobile browsers.
-  if(video){
-    const play=()=>video.play().catch(()=>{});
-    play();
-    document.addEventListener("touchstart",play,{once:true,passive:true});
+  function update(){
+    cover.classList.toggle('open',state>0);
+    kollam.classList.toggle('show',state>0);
+    kollam.classList.toggle('flipped',state>=2);
+    kannur.classList.toggle('show',state>=3);
+    kannur.classList.toggle('flipped',state>=4);
+    controls.hidden=state===0;
+    const labels=['','KOLLAM · 01','KOLLAM · 01','KANNUR · 02','KANNUR · 02'];
+    status.textContent=labels[state];
+    hint.innerHTML=state===0?'<i class="fa-regular fa-hand-pointer"></i> Tap the cover to begin':'<i class="fa-regular fa-hand-pointer"></i> Tap a page corner to turn';
+    setTimeout(processInstagram,180);
   }
+  function go(n){state=Math.max(0,Math.min(4,n));update();}
+  open.addEventListener('click',()=>go(1));
+  next.addEventListener('click',()=>go(state+1));
+  prev.addEventListener('click',()=>go(state-1));
+  document.querySelectorAll('[data-action="next"]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();go(state+1)}));
+  document.querySelectorAll('[data-action="prev"]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();go(state-1)}));
+  // Clicking the visible page edge also turns the page, as requested.
+  document.querySelectorAll('.paper').forEach(p=>p.addEventListener('click',e=>{
+    if(e.target.closest('button,a,blockquote')) return;
+    const r=p.getBoundingClientRect();
+    if(e.clientX-r.left>r.width*.72) go(state+1);
+    else if(e.clientX-r.left<r.width*.28) go(state-1);
+  }));
+  // Give Instagram's embed script time to load on first visit.
+  setTimeout(processInstagram,800);
+  window.addEventListener('load',()=>setTimeout(processInstagram,500));
 });
