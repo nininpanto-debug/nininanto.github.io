@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Map | Life & Mirror</title>
+  <meta name="description" content="Beyond the Map — a living travel journal by Life & Mirror.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/beyond-the-map.css">
+</head>
+<body>
+  <div class="btm-page">
+    <header class="btm-header">
+      <a href="life-mirror.html" class="btm-brand" aria-label="Back to Life & Mirror">
+        <img src="../assets/images/life-and-mirror-brand.png" alt="Life & Mirror">
+      </a>
+      <a href="life-mirror.html" class="back-button" aria-label="Back to Life & Mirror">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </header>
+
+    <main>
+      <section class="btm-intro">
+        <p class="eyebrow">LIFE &amp; MIRROR PRESENTS</p>
+        <h1>Beyond <em>the Map</em></h1>
+        <p class="subtitle">A living travel journal of places, people and stories.</p>
+      </section>
+
+      <section class="journal-wrap" aria-label="Beyond the Map journal">
+        <div class="journal">
+          <div class="paper-stack" aria-hidden="true"></div>
+
+          <!-- CLOSED COVER -->
+          <button class="book-cover" id="bookCover" type="button" aria-label="Open the Beyond the Map journal">
+            <span class="cover-top">A JOURNEY BY</span>
+            <strong>Beyond</strong>
+            <em>the Map</em>
+            <span class="cover-rule"></span>
+            <span class="cover-meta">PLACES • PEOPLE • STORIES</span>
+            <span class="cover-brand">LIFE &amp; MIRROR</span>
+            <span class="cover-hint">TAP TO OPEN</span>
+          </button>
+
+          <!-- PHYSICAL PAGE -->
+          <article class="turn-page" id="turnPage" aria-live="polite">
+            <div class="page-face page-front" id="pageFront"></div>
+            <div class="page-face page-back" id="pageBack"></div>
+          </article>
+        </div>
+
+        <div class="journal-controls">
+          <button class="round-control" id="prevBtn" type="button" aria-label="Previous page">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <span id="pageCounter">COVER</span>
+          <button class="round-control" id="nextBtn" type="button" aria-label="Next page">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <p class="tap-note" id="tapNote">Tap the cover to begin</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/beyond-the-map.js"></script>
+</body>
+</html>
