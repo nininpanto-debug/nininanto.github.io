@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Map | Life & Mirror</title>
+  <meta name="description" content="Beyond the Map — a cinematic journey through places and stories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/beyond-the-map.css">
+</head>
+
+<body>
+<div class="btm-world">
+
+  <!-- CINEMATIC TRAVEL BACKGROUND -->
+  <div class="travel-bg" aria-hidden="true">
+    <video id="travel-video" autoplay muted loop playsinline preload="auto">
+      <!-- Add your own cinematic MP4 files here.
+           The browser will autoplay muted/inline and loop them. -->
+      <source src="../assets/videos/beyond-map-kollam.mp4" type="video/mp4">
+    </video>
+    <div class="travel-overlay"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="btm-header">
+    <a class="btm-brand" href="../pages/life-mirror.html">
+      <span>LM</span>
+      <small>LIFE & MIRROR</small>
+    </a>
+    <button class="back-button" onclick="window.history.back()" aria-label="Go back">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Life & Mirror</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- WORLD INTRO -->
+    <section class="travel-intro" id="travel-intro">
+      <div class="coordinates">09°55′N &nbsp; 76°16′E</div>
+      <p class="eyebrow">LIFE & MIRROR PRESENTS</p>
+      <h1>Beyond<br><em>the Map</em></h1>
+      <div class="intro-line"></div>
+      <p class="intro-copy">
+        Places are not just destinations.<br>
+        They are stories waiting to be discovered.
+      </p>
+      <button class="enter-book" id="enter-book">
+        <span>OPEN THE JOURNAL</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </button>
+    </section>
+
+    <!-- OLD BOOK -->
+    <section class="book-stage" id="book-stage">
+      <div class="book-note">
+        <span>TRAVEL JOURNAL</span>
+        <p>Click the cover<br>to begin the journey.</p>
+      </div>
+
+      <div class="book" id="book">
+        <button class="book-cover" id="book-cover" aria-label="Open Beyond the Map journal">
+          <div class="cover-border">
+            <span class="cover-small">A JOURNEY BY</span>
+            <h2>Beyond<br><em>the Map</em></h2>
+            <span class="cover-rule"></span>
+            <small>PLACES • PEOPLE • STORIES</small>
+            <strong>LIFE & MIRROR</strong>
+          </div>
+        </button>
+
+        <div class="book-inside" aria-hidden="true">
+          <div class="page page-left">
+            <span class="page-number">01</span>
+            <div class="page-content">
+              <p class="page-kicker">THE FIRST CHAPTER</p>
+              <h2>Kollam</h2>
+              <p>Every journey begins somewhere.</p>
+              <div class="page-rule"></div>
+              <p class="page-note">A cinematic chapter from the Beyond the Map journey.</p>
+            </div>
+          </div>
+
+          <div class="page page-right" id="page-right">
+            <span class="page-number">01</span>
+            <div class="story-area">
+              <p class="page-kicker">BEYOND THE MAP</p>
+              <h3>KOLLAM</h3>
+
+              <!-- Instagram embed: Instagram controls playback behaviour. -->
+              <div class="instagram-frame">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/reel/DbnCj0BJLEo/"
+                  data-instgrm-version="14">
+                  <a href="https://www.instagram.com/reel/DbnCj0BJLEo/" target="_blank" rel="noopener">
+                    Watch the Kollam chapter on Instagram
+                  </a>
+                </blockquote>
+              </div>
+
+              <p class="turn-hint">
+                <i class="fa-solid fa-hand-pointer"></i>
+                Tap the outer edge of the page to turn the story.
+              </p>
+            </div>
+          </div>
+
+          <!-- TURNING LEAVES -->
+          <button class="turn-page turn-page-1" id="turn-1" aria-label="Turn to next story">
+            <span></span>
+          </button>
+
+          <div class="story-back-page" id="story-back-page">
+            <span class="page-number">02</span>
+            <div class="story-area">
+              <p class="page-kicker">THE NEXT CHAPTER</p>
+              <h3>KANNUR</h3>
+              <div class="instagram-frame">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/reel/DbsXbMupsbx/"
+                  data-instgrm-version="14">
+                  <a href="https://www.instagram.com/reel/DbsXbMupsbx/" target="_blank" rel="noopener">
+                    Watch the Kannur chapter on Instagram
+                  </a>
+                </blockquote>
+              </div>
+              <p class="turn-hint">
+                <i class="fa-solid fa-arrow-right"></i>
+                Another page. Another place. Another story.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-instruction">
+        <span class="instruction-line"></span>
+        <span>TURN THE PAGE</span>
+      </div>
+    </section>
+
+    <!-- CHAPTER NAVIGATION -->
+    <section class="chapter-strip">
+      <div>
+        <span>THE JOURNEY</span>
+        <strong>Two chapters. Many more to come.</strong>
+      </div>
+      <div class="chapter-links">
+        <button data-chapter="kollam">01 / KOLLAM</button>
+        <button data-chapter="kannur">02 / KANNUR</button>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">BEYOND THE MAP</p>
+      <h2>There is always<br><em>more to discover.</em></h2>
+      <a href="../pages/life-mirror.html">Return to Life & Mirror <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+  </main>
+
+</div>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="../js/beyond-the-map.js"></script>
+</body>
+</html>
