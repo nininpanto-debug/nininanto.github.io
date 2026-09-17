@@ -1,0 +1,255 @@
+/* =========================================================
+   THE WORLD OF NININ ANTO — WORLDS CARDS
+   ========================================================= */
+
+:root{
+  --black:#050505;
+  --black-soft:#0b0b0b;
+  --panel:#11100e;
+  --gold:#d4af37;
+  --gold-soft:#f0d783;
+  --white:#f7f4ec;
+  --muted:#aaa49a;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--black)}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:Inter,Arial,sans-serif;
+  overflow-x:hidden;
+}
+body.is-transitioning{overflow:hidden}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+
+.world-site{min-height:100vh;background:var(--black)}
+
+/* INTRO */
+.world-intro{
+  position:relative;
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(212,175,55,.10),transparent 28%),
+    radial-gradient(circle at 20% 80%,rgba(255,255,255,.035),transparent 30%),
+    #030303;
+}
+.intro-vignette{
+  position:absolute;inset:-10%;
+  background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.9) 78%,#000 100%);
+}
+.intro-noise{
+  position:absolute;inset:0;opacity:.08;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+}
+.intro-content{
+  position:relative;z-index:2;text-align:center;padding:28px;max-width:950px;
+  animation:introIn 1.4s var(--ease) both;
+}
+.intro-overline,.eyebrow{
+  color:var(--gold);font-size:.72rem;letter-spacing:.34em;font-weight:600;
+}
+.intro-content h1{
+  margin-top:20px;
+  font-family:Cinzel,Georgia,serif;
+  font-size:clamp(2.2rem,7vw,6.5rem);
+  line-height:.98;font-weight:500;letter-spacing:.02em;
+}
+.intro-content h1 span{display:block;color:var(--gold);margin-top:8px}
+.intro-line{
+  width:90px;height:1px;background:var(--gold);margin:28px auto 22px;
+  box-shadow:0 0 18px rgba(212,175,55,.45);
+}
+.intro-tagline{color:#c9c4ba;font-size:clamp(.9rem,2vw,1.15rem);letter-spacing:.08em}
+.enter-world{
+  margin-top:42px;display:inline-flex;align-items:center;gap:18px;
+  padding:15px 25px;border:1px solid rgba(212,175,55,.65);
+  background:rgba(10,10,10,.72);color:var(--white);cursor:pointer;
+  letter-spacing:.16em;font-size:.72rem;transition:.35s var(--ease);
+}
+.enter-world i{color:var(--gold);transition:.35s}
+.enter-world:hover{background:var(--gold);color:#080808;box-shadow:0 0 40px rgba(212,175,55,.25)}
+.enter-world:hover i{color:#080808;transform:translateX(5px)}
+.intro-scroll{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  font-size:.58rem;letter-spacing:.25em;color:#777;
+}
+
+/* MAIN */
+.world-main{background:linear-gradient(#070707,#0b0a08)}
+.world-header{
+  position:absolute;z-index:5;top:0;left:0;right:0;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:28px clamp(20px,5vw,70px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.brand{font-family:Cinzel,Georgia,serif;font-size:1rem;letter-spacing:.14em}
+.brand span{color:var(--gold)}
+.header-caption{font-size:.58rem;letter-spacing:.28em;color:#777}
+
+.world-hero{
+  min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(212,175,55,.12),transparent 24%),
+    linear-gradient(180deg,#090909 0%,#050505 100%);
+}
+.hero-glow{
+  position:absolute;width:55vw;height:55vw;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,175,55,.07),transparent 68%);
+  filter:blur(12px);
+}
+.hero-copy{position:relative;z-index:1;padding:100px 25px 70px;max-width:850px}
+.hero-copy h2{
+  margin:22px 0 20px;font-family:Cinzel,Georgia,serif;
+  font-size:clamp(2.5rem,6vw,5.5rem);line-height:1.03;font-weight:500;
+}
+.hero-copy h2 span{color:var(--gold)}
+.hero-copy>p:not(.eyebrow){max-width:620px;margin:auto;color:#a7a299;line-height:1.8}
+.hero-explore{
+  margin-top:36px;display:inline-flex;align-items:center;gap:13px;
+  color:var(--gold);font-size:.7rem;letter-spacing:.18em;
+}
+.hero-explore i{animation:floatDown 1.5s ease-in-out infinite}
+
+/* CARDS */
+.worlds-section{padding:100px clamp(18px,5vw,70px) 120px;max-width:1500px;margin:auto}
+.section-heading{text-align:center;max-width:750px;margin:0 auto 52px}
+.section-heading h2{
+  margin:15px 0 13px;font:500 clamp(2rem,4vw,3.5rem) Cinzel,Georgia,serif
+}
+.section-heading>p:last-child{color:#8e8a83;line-height:1.7}
+
+.world-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.world-card{
+  position:relative;isolation:isolate;min-height:330px;overflow:hidden;
+  border:1px solid rgba(212,175,55,.20);
+  background:
+    linear-gradient(135deg,#171512,#080808);
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:22px;
+  transition:transform .55s var(--ease),border-color .35s,box-shadow .55s;
+}
+.world-card::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background-image:var(--world-image);
+  background-size:cover;background-position:center;
+  opacity:.72;transform:scale(1.01);
+  transition:transform .9s var(--ease),opacity .5s;
+}
+.world-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(0,0,0,.28) 0%,rgba(0,0,0,.55) 48%,rgba(0,0,0,.93) 100%);
+  transition:.5s;
+}
+.world-card:hover{
+  transform:translateY(-7px) scale(1.012);
+  border-color:rgba(212,175,55,.82);
+  box-shadow:0 25px 60px rgba(0,0,0,.55),0 0 30px rgba(212,175,55,.08);
+}
+.world-card:hover::before{transform:scale(1.10);opacity:.9}
+.world-card:hover::after{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.45) 48%,rgba(0,0,0,.9))}
+.card-number{font-size:.62rem;letter-spacing:.18em;color:rgba(255,255,255,.55)}
+.card-icon{
+  position:absolute;top:22px;left:50%;transform:translateX(-50%);
+  width:44px;height:44px;display:grid;place-items:center;
+  color:var(--gold);font-size:1rem;
+  border:1px solid rgba(212,175,55,.38);border-radius:50%;
+  background:rgba(0,0,0,.35);backdrop-filter:blur(5px);
+}
+.card-content{margin-top:auto;padding-top:110px}
+.card-content strong{
+  display:block;font:600 clamp(1.15rem,2vw,1.7rem) Cinzel,Georgia,serif;
+  color:#fff;letter-spacing:.03em;
+}
+.card-content small{display:block;margin-top:9px;color:#d1ccc2;line-height:1.55;font-size:.72rem;letter-spacing:.04em}
+.card-arrow{
+  position:absolute;right:20px;bottom:20px;width:34px;height:34px;
+  display:grid;place-items:center;border:1px solid rgba(255,255,255,.18);
+  color:var(--gold);font-size:.7rem;transition:.35s;
+}
+.world-card:hover .card-arrow{background:var(--gold);color:#090909;transform:rotate(8deg)}
+.world-card-mission{min-height:360px}
+.world-card-art{min-height:360px}
+
+/* TRANSITION */
+.world-transition{
+  position:fixed;inset:0;z-index:100;pointer-events:none;visibility:hidden;opacity:0;
+  background:#000;overflow:hidden;
+}
+.world-transition.active{visibility:visible;opacity:1}
+.transition-image{
+  position:absolute;inset:-8%;
+  background-image:var(--transition-image);
+  background-position:center;background-size:cover;
+  opacity:0;transform:scale(.72);
+  filter:saturate(.9) contrast(1.08);
+}
+.world-transition.active .transition-image{
+  animation:worldZoom 1.25s var(--ease) forwards;
+}
+.transition-glow{
+  position:absolute;inset:-20%;
+  background:radial-gradient(circle,rgba(212,175,55,.85) 0,rgba(212,175,55,.16) 13%,transparent 42%);
+  opacity:0;transform:scale(.2);
+}
+.world-transition.active .transition-glow{animation:glowBurst 1.15s var(--ease) forwards}
+.transition-title,.transition-subtitle{
+  position:absolute;left:50%;top:50%;width:92%;text-align:center;
+  transform:translate(-50%,-50%);
+  text-shadow:0 5px 35px #000;
+}
+.transition-title{
+  color:#fff;font:500 clamp(2rem,8vw,7rem) Cinzel,Georgia,serif;
+  letter-spacing:.04em;opacity:0;
+}
+.transition-subtitle{
+  top:calc(50% + clamp(55px,8vw,100px));color:var(--gold);
+  font-size:.72rem;letter-spacing:.22em;opacity:0;
+}
+.world-transition.active .transition-title{animation:titleReveal .75s .32s var(--ease) forwards}
+.world-transition.active .transition-subtitle{animation:subtitleReveal .65s .55s var(--ease) forwards}
+
+/* FOOTER */
+.world-footer{text-align:center;padding:35px 20px 55px;color:#666;font-size:.72rem;letter-spacing:.08em}
+.world-footer .footer-line{width:80px;height:1px;background:rgba(212,175,55,.45);margin:0 auto 20px}
+.world-footer span{display:block;margin-top:12px;font-size:.58rem;color:#444;letter-spacing:.16em}
+
+/* ANIMATION */
+@keyframes introIn{from{opacity:0;transform:translateY(20px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+@keyframes floatDown{50%{transform:translateY(4px)}}
+@keyframes worldZoom{0%{opacity:0;transform:scale(.72)}25%{opacity:1}100%{opacity:1;transform:scale(1.18)}}
+@keyframes glowBurst{0%{opacity:0;transform:scale(.2)}45%{opacity:.8}100%{opacity:0;transform:scale(1.8)}}
+@keyframes titleReveal{0%{opacity:0;transform:translate(-50%,-50%) scale(.8);filter:blur(8px)}100%{opacity:1;transform:translate(-50%,-50%) scale(1);filter:none}}
+@keyframes subtitleReveal{from{opacity:0;transform:translate(-50%,calc(-50% + 20px))}to{opacity:1;transform:translate(-50%,-50%)}}
+
+/* MOBILE */
+@media(max-width:900px){
+  .world-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .world-card{min-height:300px}
+}
+@media(max-width:620px){
+  .world-header{padding:20px}
+  .header-caption{display:none}
+  .world-hero{min-height:90svh}
+  .hero-copy{padding-top:90px}
+  .worlds-section{padding-top:70px}
+  .world-grid{grid-template-columns:1fr;gap:14px}
+  .world-card,.world-card-mission,.world-card-art{min-height:310px}
+  .card-content strong{font-size:1.25rem}
+  .intro-tagline{line-height:1.6}
+  .enter-world{margin-top:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
