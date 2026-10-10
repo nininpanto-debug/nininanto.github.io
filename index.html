@@ -1,226 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="The World of Ninin Anto — one person, many worlds, endless possibilities.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Enter the worlds of Ninin Anto — storytelling, acting, writing, business, Mission 333, AI, creative production and art.">
   <title>The World of Ninin Anto</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <link rel="preload" as="image" href="assets/images/hero.jpg">
   <link rel="stylesheet" href="css/worlds-cards.css">
+  <script src="js/worlds-cards.js" defer></script>
 </head>
-
 <body>
-  <div class="world-site" id="world-site">
+  <a class="skip-link" href="#worlds">Skip to the worlds</a>
 
-    <section class="world-intro" id="world-intro" aria-label="Introduction">
-      <div class="intro-vignette"></div>
-      <div class="intro-noise"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The World of Ninin Anto home">
+      <span class="brand-mark">N</span>
+      <span class="brand-copy">
+        <strong>NININ ANTO</strong>
+        <small>ONE PERSON. MANY WORLDS.</small>
+      </span>
+    </a>
+    <a class="header-link" href="#contact">Connect <span aria-hidden="true">↗</span></a>
+  </header>
 
-      <div class="intro-content">
-        <p class="intro-overline">WELCOME TO THE</p>
-        <h1>WORLD OF <span>NININ ANTO</span></h1>
-        <div class="intro-line"></div>
-        <p class="intro-tagline">One Person. Many Worlds. Endless Possibilities.</p>
-
-        <button class="enter-world" id="enter-world" type="button">
-          <span>ENTER THE WORLD</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> A PERSONAL UNIVERSE</p>
+        <h1 id="hero-title">The World of<br><em>Ninin Anto</em></h1>
+        <p class="hero-intro">One person. Many missions.<br class="mobile-break"> Endless possibilities.</p>
+        <p class="hero-note">Explore the stories, ambitions, businesses and creative worlds that make the journey.</p>
       </div>
-
-      <div class="intro-scroll">SCROLL TO EXPLORE</div>
+      <a class="scroll-cue" href="#worlds"><span class="scroll-line"></span><span>EXPLORE THE WORLDS</span><span aria-hidden="true">↓</span></a>
     </section>
 
-    <main class="world-main" id="world-main">
-      <header class="world-header">
-        <a class="brand" href="index.html" aria-label="The World of Ninin Anto">
-          <span>NININ</span> ANTO
+    <section class="worlds-section" id="worlds" aria-labelledby="worlds-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> CHOOSE YOUR JOURNEY</p>
+          <h2 id="worlds-title">Nine worlds. <em>One story.</em></h2>
+        </div>
+        <p class="section-aside">Tap any world to enter.<br>Every journey starts with one step.</p>
+      </div>
+
+      <div class="world-grid">
+        <a class="world-card world-life" href="pages/life-mirror.html" style="--world-image:url('../assets/images/worlds/01-life-and-mirror.jpg')" data-image="assets/images/worlds/01-life-and-mirror.jpg" data-title="Life & Mirror" data-number="01">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>01 / REFLECTION</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">LIFE • STORIES • PERSPECTIVE</span><strong>Life &amp; Mirror</strong><span class="card-description">Finding meaning in the moments that shape us.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
         </a>
-        <div class="header-caption">THE WORLD OF NININ ANTO</div>
-      </header>
 
-      <section class="world-hero">
-        <div class="hero-glow"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">ONE PERSON • MANY WORLDS</p>
-          <h2>Different passions.<br><span>One journey.</span></h2>
-          <p>Explore the worlds I've built, imagined, created and continue to discover.</p>
-          <a class="hero-explore" href="#worlds">
-            EXPLORE THE WORLDS
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
-        </div>
-      </section>
+        <a class="world-card" href="pages/acting-direction.html" data-image="assets/images/worlds/02-acting-direction.jpg" data-title="Acting & Direction" data-number="02">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>02 / CINEMA</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">ACTING • DIRECTION • PERFORMANCE</span><strong>Acting &amp; Direction</strong><span class="card-description">Stories brought to life in front of and behind the camera.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-      <section class="worlds-section" id="worlds">
-        <div class="section-heading">
-          <p class="eyebrow">ENTER A WORLD</p>
-          <h2>My Worlds</h2>
-          <p>Every card is a doorway. Choose a world and step inside.</p>
-        </div>
+        <a class="world-card" href="pages/writer.html" data-image="assets/images/worlds/03-writer.jpg" data-title="Writer's Shelf" data-number="03">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>03 / WORDS</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">BOOKS • IDEAS • INNER WORLDS</span><strong>Writer's Shelf</strong><span class="card-description">Books, reflections and ideas worth carrying forward.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-        <div class="world-grid">
+        <a class="world-card" href="pages/youcando-business.html" data-image="assets/images/worlds/04-youcando-business.jpg" data-title="YouCanDo.Business" data-number="04">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>04 / BUSINESS</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">CONSULTING • STRATEGY • GROWTH</span><strong>YouCanDo.Business</strong><span class="card-description">Practical guidance for building stronger businesses.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-          <a class="world-card"
-             href="pages/life-and-mirror.html"
-             data-world="life"
-             data-title="LIFE & MIRROR"
-             data-subtitle="Stories • Inspiration • Life Lessons"
-             style="--world-image:url('assets/images/worlds/01-life-and-mirror.jpg')">
-            <span class="card-number">01</span>
-            <span class="card-icon"><i class="fa-solid fa-leaf"></i></span>
-            <span class="card-content">
-              <strong>LIFE & MIRROR</strong>
-              <small>Stories, Inspiration<br>and Life Lessons</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+        <a class="world-card world-mission" href="pages/mission333.html" data-image="assets/images/worlds/05-mission333.jpg" data-title="Mission 333" data-number="05">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>05 / THE CHALLENGE</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">MOTORCYCLE • ENDURANCE • PURPOSE</span><strong>Mission 333</strong><span class="card-description">A bold ride driven by determination, discipline and a dream.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-          <a class="world-card"
-             href="pages/acting-direction.html"
-             data-world="acting"
-             data-title="ACTING & DIRECTION"
-             data-subtitle="Cinema • Acting • Storytelling"
-             style="--world-image:url('assets/images/worlds/02-acting-direction.jpg')">
-            <span class="card-number">02</span>
-            <span class="card-icon"><i class="fa-solid fa-clapperboard"></i></span>
-            <span class="card-content">
-              <strong>ACTING & DIRECTION</strong>
-              <small>Acting, Direction<br>and Storytelling</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+        <a class="world-card" href="pages/ai-ninin.html" data-image="assets/images/worlds/06-ai-ninin.jpg" data-title="AI Ninin" data-number="06">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>06 / THE FUTURE</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">ARTIFICIAL INTELLIGENCE • EXPERIMENTS</span><strong>AI Ninin</strong><span class="card-description">Exploring what happens when imagination meets technology.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-          <a class="world-card"
-             href="pages/writer.html"
-             data-world="writer"
-             data-title="WRITER"
-             data-subtitle="Words • Stories • Imagination"
-             style="--world-image:url('assets/images/worlds/03-writer.jpg')">
-            <span class="card-number">03</span>
-            <span class="card-icon"><i class="fa-solid fa-pen-nib"></i></span>
-            <span class="card-content">
-              <strong>WRITER</strong>
-              <small>Words, Stories<br>and Imagination</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+        <a class="world-card" href="pages/elevenstudio-creative.html" data-image="assets/images/worlds/07-eleven-studio-creative.jpg" data-title="Eleven Studio Creative" data-number="07">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>07 / CREATIVE STUDIO</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">CONTENT • CAMPAIGNS • PRODUCTION</span><strong>Eleven Studio Creative</strong><span class="card-description">Ideas shaped into visual stories and creative work.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-          <a class="world-card"
-             href="pages/youcando-business.html"
-             data-world="business"
-             data-title="YOUCANDO.BUSINESS"
-             data-subtitle="Hospitality • Consulting • Growth"
-             style="--world-image:url('assets/images/worlds/04-youcando-business.jpg')">
-            <span class="card-number">04</span>
-            <span class="card-icon"><i class="fa-solid fa-briefcase"></i></span>
-            <span class="card-content">
-              <strong>YOUCANDO.BUSINESS</strong>
-              <small>Hospitality Consulting<br>and Business Growth</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+        <a class="world-card" href="pages/na-studio.html" data-image="assets/images/worlds/08-na-studio.jpg" data-title="NA Studio" data-number="08">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>08 / PERSONAL BRAND</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">IDENTITY • IDEAS • NEW VENTURES</span><strong>NA Studio</strong><span class="card-description">A space for new concepts, collaborations and experiments.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
 
-          <a class="world-card world-card-mission"
-             href="pages/mission333.html"
-             data-world="mission"
-             data-title="MISSION 333"
-             data-subtitle="Adventure • Determination • Records"
-             style="--world-image:url('assets/images/worlds/05-mission333.jpg')">
-            <span class="card-number">05</span>
-            <span class="card-icon"><i class="fa-solid fa-motorcycle"></i></span>
-            <span class="card-content">
-              <strong>MISSION 333</strong>
-              <small>Adventure, Determination<br>and Records</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+        <a class="world-card" href="pages/art-studio.html" data-image="assets/images/worlds/09-art-studio.jpg" data-title="Art Studio" data-number="09">
+          <span class="card-image" aria-hidden="true"></span><span class="card-vignette" aria-hidden="true"></span>
+          <span class="card-top"><span>09 / EXPRESSION</span><span class="card-symbol">↗</span></span>
+          <span class="card-copy"><span class="card-kicker">ART • DESIGN • EXPRESSION</span><strong>Art Studio</strong><span class="card-description">Visual ideas, creative exploration and the art of seeing differently.</span></span>
+          <span class="card-bottom"><span>ENTER WORLD</span><span class="card-arrow">↗</span></span>
+        </a>
+      </div>
+    </section>
 
-          <a class="world-card"
-             href="pages/ai-ninin.html"
-             data-world="ai"
-             data-title="AI NININ"
-             data-subtitle="Artificial Intelligence • Future Technology"
-             style="--world-image:url('assets/images/worlds/06-ai-ninin.jpg')">
-            <span class="card-number">06</span>
-            <span class="card-icon"><i class="fa-solid fa-microchip"></i></span>
-            <span class="card-content">
-              <strong>AI NININ</strong>
-              <small>Artificial Intelligence<br>and Future Technology</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+    <section class="contact-strip" id="contact">
+      <div>
+        <p class="eyebrow"><span></span> THE NEXT CHAPTER</p>
+        <h2>Have an idea?<br><em>Let's connect.</em></h2>
+      </div>
+      <div class="contact-actions">
+        <a class="contact-button" href="mailto:nininpanto@gmail.com">Email Ninin Anto <span aria-hidden="true">↗</span></a>
+        <a class="contact-secondary" href="https://www.instagram.com/actor_ninin/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-          <a class="world-card"
-             href="pages/elevenstudio-creative.html"
-             data-world="eleven"
-             data-title="ELEVEN STUDIO CREATIVE"
-             data-subtitle="Creative Media • Production"
-             style="--world-image:url('assets/images/worlds/07-eleven-studio-creative.jpg')">
-            <span class="card-number">07</span>
-            <span class="card-icon"><i class="fa-solid fa-film"></i></span>
-            <span class="card-content">
-              <strong>ELEVEN STUDIO CREATIVE</strong>
-              <small>Creative Media<br>and Production</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">THE WORLD OF <strong>NININ ANTO</strong></a>
+    <span>One person. Many missions. Endless possibilities.</span>
+    <span>© <span id="current-year">2026</span> Ninin Anto</span>
+  </footer>
 
-          <a class="world-card"
-             href="pages/na-studio.html"
-             data-world="na"
-             data-title="NA STUDIO"
-             data-subtitle="Film • AI • Visual Storytelling"
-             style="--world-image:url('assets/images/worlds/08-na-studio.jpg')">
-            <span class="card-number">08</span>
-            <span class="card-icon"><i class="fa-solid fa-camera"></i></span>
-            <span class="card-content">
-              <strong>NA STUDIO</strong>
-              <small>Film, AI<br>and Visual Storytelling</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
-
-          <a class="world-card world-card-art"
-             href="pages/art-studio.html"
-             data-world="art"
-             data-title="ART STUDIO"
-             data-subtitle="Drawing • Crafts • Experiments"
-             style="--world-image:url('assets/images/worlds/09-art-studio.jpg')">
-            <span class="card-number">09</span>
-            <span class="card-icon"><i class="fa-solid fa-palette"></i></span>
-            <span class="card-content">
-              <strong>ART STUDIO</strong>
-              <small>Drawing, Crafts<br>and Creative Experiments</small>
-            </span>
-            <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
-
-        </div>
-      </section>
-
-      <footer class="world-footer">
-        <div class="footer-line"></div>
-        <p>Every mission continues. Every story evolves.</p>
-        <span>© 2026 Ninin Anto</span>
-      </footer>
-    </main>
-
-    <div class="world-transition" id="world-transition" aria-hidden="true">
-      <div class="transition-image"></div>
-      <div class="transition-glow"></div>
-      <div class="transition-title"></div>
-      <div class="transition-subtitle"></div>
-    </div>
-
+  <div class="world-transition" aria-hidden="true">
+    <div class="transition-image"></div>
+    <div class="transition-shade"></div>
+    <div class="transition-copy"><span class="transition-number">01</span><span class="transition-label">ENTERING WORLD</span><strong class="transition-title">Life &amp; Mirror</strong></div>
   </div>
-
-  <script src="js/worlds-cards.js"></script>
 </body>
 </html>
